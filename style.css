@@ -1,43 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+/* Hero Section */
+#hero {
     text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
 }
 
-header nav a {
-    color: #fff;
-    margin: 0 1rem;
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Portfolio Section */
+#portfolio {
+    margin: 40px 0;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
 
-header nav a:hover {
+.project a:hover {
     text-decoration: underline;
 }
 
-section {
-    padding: 2rem;
+/* About Section */
+#about {
     text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-section#portfolio .video {
-    margin: 2rem 0;
+#about p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+/* Contact Section */
+#contact {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+}
+
+#contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#contact p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
 }
