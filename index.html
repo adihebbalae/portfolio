@@ -1,49 +1,2887 @@
-<!DOCTYPE html>
+
+
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adi Hebbalae Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Hero Section -->
-    <header id="hero">
-        <h1>Adi Hebbalae</h1>
-        <p>Video Editor & Storyteller</p>
-    </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Selected Projects</h2>
-        <div class="project">
-            <img src="assets/project1.jpg" alt="Project Thumbnail">
-            <h3>LlamaVFX Channel</h3>
-            <p>Transforming gaming content into cinematic storytelling.</p>
-            <a href="https://www.youtube.com/llamavfx" target="_blank">View Project</a>
+		<meta charset="UTF-8">
+	<title>UT Austin Student Housing | The Nine at Rio</title>
+	<meta name="description" content="Live luxuriously in the newest student apartments in Austin, TX, steps from the UT Austin campus at The Nine at Rio. Get in touch to schedule a tour today!">
+	<meta name="robots" content="noodp,noydir">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+
+		<link rel="canonical" href="https://www.the9rio.com/">
+
+		<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.the9rio.com/">
+	<meta property="og:title" content="UT Austin Student Housing | The Nine at Rio">
+	<meta property="og:description" content="Live luxuriously in the newest student apartments in Austin, TX, steps from the UT Austin campus at The Nine at Rio. Get in touch to schedule a tour today!">
+	<meta property="og:image" content="https://www.the9rio.com/wp-content/uploads/2023/11/meta.png">
+
+		<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://www.the9rio.com/">
+	<meta property="twitter:title" content="UT Austin Student Housing | The Nine at Rio">
+	<meta property="twitter:description" content="Live luxuriously in the newest student apartments in Austin, TX, steps from the UT Austin campus at The Nine at Rio. Get in touch to schedule a tour today!">
+	<meta property="twitter:image" content="https://www.the9rio.com/wp-content/uploads/2023/11/meta.png">
+
+		
+				
+	
+	
+	
+				
+	
+				
+		<style>
+				*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all:unset;
+    display:revert;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 11.6923px;
+    --padding: 30px;
+    --padding-less: 15px;
+    --padding-less-complement: 30px;
+    --margin: 3rem;
+    --border-radius: 3px;
+    --device-height: 100vh;
+    --video-width: 100vw;
+    --video-height: 100vh;
+    --animation-easing: cubic-bezier(.25, 1, .30, 1);
+    --z-index-base: 1;
+    --z-index-overlay: 2;
+    --z-index-menu: 4;
+    --z-index-modal: 5;
+    --z-index-dropdown: 6;
+}
+body {
+    font-weight: 400;
+    line-height: 1.73;
+    color: #000;
+    background: #ffffff;
+    padding-bottom: 44px;
+    margin: 0;
+}
+body.no-scroll {
+    overflow: hidden;
+    padding-right: 0;
+}
+@media(min-width: 767px) {
+    html {
+        --padding: 9.721vw;
+        --padding-less: 3.4254952381vw;
+        --padding-less-complement: 6.29550476191vw;
+        --margin: 6rem;
+    }
+}
+@media(min-width: 992px) {
+    body {
+        padding-bottom: 0;
+    }
+}
+@media(min-width: 1280px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media(min-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media(min-width: 1600px) {
+    html {
+        --padding: 10.5rem;
+        --padding-less: 3.7rem;
+        --padding-less-complement: 6.8rem;
+        font-size: 16px;
+    }
+}
+
+/**
+  * Get Screen dimensions for video
+  */
+@media (min-aspect-ratio: 16/9) {
+    html {
+        --video-height: 56.25vw;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    html {
+        --video-width: 177.78vh;
+    }
+}
+
+small, .text_small {
+    font-size: 11px;
+}
+
+.h-plus-plus { font-size: 4.84375rem; }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: .4em;
+    cursor: pointer;
+}
+a:hover,
+a:focus,
+a.active {
+    text-decoration: underline;
+}
+a:not([class]) {
+    text-decoration: underline;
+}
+/* Highlight of focus */
+:focus { 
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto var(--color-primary);
+}
+/* If browser supports, limit this to keyboard */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+button { font-size: inherit; font-family: inherit; background: transparent; border: 0; -webkit-appearance: none; appearance: none; }
+
+p, ol, ul { 
+    margin-top: 0;
+    font-size: 15px; 
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ol,
+ul{
+    list-style:none;
+}
+
+ul:not([class]) {
+    color: inherit;
+    padding-left: .6rem;
+}
+ul:not([class]) li {
+    position: relative;
+    padding-left: 2.4rem;
+    margin-bottom: .65rem;
+}
+ul:not([class]) li:before {
+    content: '';
+    display: block;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 0.8125rem;
+    left: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+ul:not([class]) li ul:not([class]) {
+    margin-top: .65rem;
+}
+
+ol:not([class]) {
+    list-style-type: decimal;
+    color: inherit;
+    padding-left: 1.4rem;
+}
+ol:not([class]) li {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+img{
+    max-width:100%;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+textarea{
+    white-space:revert;
+}
+
+strong {
+    font-family: var(--font-family-secondary);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #0003;
+    margin: 1.5rem 0;
+}
+
+.container { 
+    position: relative;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.section {
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.section-container { margin-left: auto; margin-right: auto; max-width: 767px; width: 100% }
+@media (min-width: 992px) {
+    .section-container { max-width:none }
+}
+
+/**
+* Buttons
+*/
+.btn { font-family: var(--font-family-secondary); display: inline-flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; font-weight: 500; color: #fff; background-color: #000; min-width: 100%; min-height: 50px; text-decoration: none; border-radius: var(--border-radius); cursor: pointer; text-transform: uppercase; transition: background-color .2s ease; padding: .5rem 2rem; }
+.btn:hover,
+.btn:focus { text-decoration: none; }
+@media(min-width: 992px) {
+    .btn { font-size: 16px; min-width: 200px; }
+}
+.btn-icon { font-size: 12px; min-width: 3.75rem; min-height: 3.75rem; }
+.btn-small { font-size: 13px; min-width: 9.5rem; min-height: 37px; padding: .5rem 1rem; }
+
+.btn-primary { color: var(--color-primary); background-color: transparent; border: 1px solid var(--color-primary); }
+.btn-primary:hover,
+.btn-primary:focus { color: #fff; background-color: var(--color-primary); }
+
+.btn-primary svg { width: 12px; height: 12px; margin-left: .5rem; fill: var(--color-primary); transition: fill .15s ease; }
+.btn-primary:hover svg,
+.btn-primary:focus svg { fill: #fff; }
+
+.btn-primary.btn-bg { color: #fff; background-color: transparent; border: 1px solid var(--color-primary); }
+.btn-primary.btn-bg:hover,
+.btn-primary.btn-bg:focus { color: var(--color-primary); background-color: #fff; }
+
+.btn-primary-alt { color: #fff; background-color: var(--color-primary); border: 1px solid var(--color-primary); }
+.btn-primary-alt:hover,
+.btn-primary-alt:focus { color: var(--color-primary); background-color: transparent; }
+
+.btn-secondary { color: var(--color-secondary); background-color: transparent; border: 1px solid var(--color-secondary); }
+.btn-secondary:hover,
+.btn-secondary:focus { color: #fff; background-color: var(--color-secondary); }
+
+.btn-secondary-alt { color: #fff; background-color: var(--color-secondary); border: 1px solid var(--color-secondary); }
+.btn-secondary-alt:hover,
+.btn-secondary-alt:focus { color: var(--color-secondary); background-color: transparent; }
+
+.btn--transparent { border: 1px solid #fff; }
+.btn--transparent:hover,
+.btn--transparent:focus { background-color: #fff; }
+
+.btn-red { color: #fff; background-color: red; }
+.btn-red:hover,.btn-red:focus { color: red; background-color: transparent; border: 1px solid red; }
+
+/* images */
+.img-fluid { display: block; max-width: 100%; height: auto; }
+
+/* sr-only */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* text-center */
+.text-center { text-align: center; }
+
+/* SVG Embeds */
+.svg-inline svg * { stroke: var(--color-primary)!important; }
+.svg-inline svg.landmark-2023-share-svg * { fill: var(--color-primary)!important; }
+.svg-inline svg.mobile-app-svg * { fill: var(--color-primary)!important; stroke-width: 0; }
+.svg-inline svg.what-you-need-svg * { fill: var(--color-primary)!important; stroke-width: 0; }
+
+
+.location-group__icon svg { width: 18px; height: auto; }
+.embedded-svg svg { display: block; max-width: 100%; height: auto; }
+
+/* Some Utilities */
+.row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+.col-lg-4,
+.col-lg-6,
+.col-md-6 { flex: 0 0 100%; max-width: 100%; padding-left: 15px; padding-right: 15px; }
+@media (min-width: 767px) {
+    .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+}
+@media (min-width: 992px) {
+    .col-lg-4 { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; }
+    .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+}
+
+/* Responsive iframe */
+.iframe-fluid, .iframe-responsive {width:100%;height:auto;padding-top:56.25%;position:relative;}
+.iframe-fluid > iframe, .iframe-responsive > iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+/* Arrow Button */
+.arrow-btn { position: relative; display: flex; align-items: center; font-family: var(--font-family-secondary); font-size: 12px; text-transform: uppercase; cursor: pointer; transition: all .3s ease; }
+.arrow-btn__arrow { content: ''; width: 36px; height: auto; margin-left: 5px; }
+.arrow-btn:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; transition: all .3s ease; pointer-events: none; background-color: var(--color-tertiary); color: var(--color-tertiary); }
+.arrow-btn:hover,
+.arrow-btn:focus,
+.arrow-btn.active { text-decoration: none; }
+.arrow-btn:hover:after,
+.arrow-btn:focus:after,
+.arrow-btn.active:after { width: 100%; }
+.arrow-btn.arrow-btn--reverse::after { bottom: 0; right: 0; left: initial; }
+.arrow-btn.arrow-btn--reverse svg { transform: rotate(180deg); }
+@media(min-width: 767px) {
+    .arrow-btn { font-size: 15px; }
+}
+
+/* Blur Effect */
+.blur { filter: blur(3px); transition: filter .33333s ease; }
+.blur.lazyloaded { filter: blur(0); }
+.blur.lazyload:not([src]) { visibility: hidden; }
+
+.gm-style-iw.gm-style-iw-c { padding: 1.6875rem!important; border-radius: 0; background: var(--color-secondary); color: #fff; border: 1px solid var(--color-secondary);  box-shadow: 0 2px 4px 0 var(--color-tertiary); -webkit-backdrop-filter: blur( 4px ); backdrop-filter: blur( 4px ); animation: fadeIn .33333s; max-width: 270px!important; }
+.gm-style-iw-d { font-family: var(--font-family-primary); font-size: 14px; line-height: 1.4; padding: 0rem!important; overflow: auto!important; }
+.gm-style-iw-d strong { font-size: 1.125rem; font-family: var(--font-family-tertiary); font-weight: 500; }
+.gm-style .gm-style-iw-tc::after { background: var(--color-secondary); }
+.gm-ui-hover-effect { top: 5px!important; right: 5px!important; opacity: 1; }
+.gm-ui-hover-effect>span { background-color: #fff; width: 24px!important; height: 24px!important; margin: 0!important;}
+.gmap-window-title { font-size: 1.2rem; margin-bottom: .75rem!important; }
+.gmap-window-address { font-size: .8rem; display: block; max-width: 240px; }
+.gm-style-moc { opacity: 0!important; }
+@media(min-width: 767px) {
+    .gm-style-iw.gm-style-iw-c { max-width: 340px!important; }
+}
+
+/* Termly */
+#termly-code-snippet-support button {
+    text-align: center;
+}
+#termly-code-snippet-support .t-consentPrompt {
+    z-index: 10000000000;
+}
+
+html body .uwy {z-index: 20000;}
+
+.redcross {text-align:center;margin-top:0;}				@font-face { font-family: "Gotham-Medium"; src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.eot"); /* IE9 Compat Modes */ src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.woff2") format("woff2"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.woff") format("woff"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.ttf") format("truetype"), /* Safari, Android, iOS */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.otf") format("opentype"), /* Open Type Font */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Medium.svg") format("svg"); /* Legacy iOS */ font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: "Gotham-Black"; src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.eot"); /* IE9 Compat Modes */ src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.woff2") format("woff2"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.woff") format("woff"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.ttf") format("truetype"), /* Safari, Android, iOS */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.otf") format("opentype"), /* Open Type Font */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Black.svg") format("svg"); /* Legacy iOS */ font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: "Gotham-Bold"; src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.eot"); /* IE9 Compat Modes */ src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.woff2") format("woff2"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.woff") format("woff"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.ttf") format("truetype"), /* Safari, Android, iOS */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.otf") format("opentype"), /* Open Type Font */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Bold.svg") format("svg"); /* Legacy iOS */ font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: "Gotham-Book"; src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.eot"); /* IE9 Compat Modes */ src: url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.woff2") format("woff2"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.woff") format("woff"), /* Modern Browsers */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.ttf") format("truetype"), /* Safari, Android, iOS */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.otf") format("opentype"), /* Open Type Font */ url("https://www.the9rio.com/wp-content/themes/landmark-2023/assets/fonts/Gotham-Book.svg") format("svg"); /* Legacy iOS */ font-weight: normal; font-style: normal; font-display: swap; }
+
+html {
+    --font-family-primary: 'Gotham-Book', sans-serif;
+    --font-family-secondary: 'Gotham-Bold', arial;
+    --font-family-tertiary: 'Gotham-Medium', sans-serif;
+    --font-family-quaternary: 'Gotham-Black', sans-serif;
+    --color-primary: #007b99;
+    --color-primary-transparent: #007b9954;
+    --color-primary-darker: #005c72;
+    --color-secondary: #b6674a;
+    --color-tertiary: #282d2d;
+    --color-tertiary-transparent: #282d2d21;
+    --color-quaternary: #1c1f2a;
+    --color-quinary: #007b99;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    color: var(--color-tertiary);
+    font-family: var(--font-family-quaternary);
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 1.4rem;
+    text-transform: uppercase;
+}
+
+h1, .h1 { 
+    font-size: 3.052rem;
+}
+h2, .h2 { 
+    font-size: 2.5rem;
+}
+h3, .h3 { 
+    font-size: 2rem; 
+}
+h4, .h4 { 
+    font-size: 1.75rem; 
+}
+h5, .h5 { 
+    font-size: 1.25rem; 
+}
+
+.subheading {
+    font-family: var(--font-family-tertiary);
+    font-size: 1.375rem;
+    font-family: inherit;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    margin-top: -1.4rem;
+    line-height: 1.44;
+}
+.layout-home__eyebrow {
+    display: block;
+    font-family: var(--font-family-secondary);
+    font-size: 1.375rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: -.2em
+}
+.layout-home__title {
+    display: block;
+    font-size: 3.25rem;
+    text-transform: uppercase
+}	</style>
+
+				<script type="text/javascript" src="https://app.termly.io/resource-blocker/3b5e5068-f3a2-4263-9fe2-9abf08552d73?autoBlock=on"></script>
+	
+		<script>
+		/**
+ * Enter/Leave Transition
+ */
+
+// Enter animation
+function enterAnimation(el, className, callback, delay = 500) {
+  el.classList.add(className + '--enter');
+  setTimeout(function() {
+      el.classList.remove(className + '--enter');
+      el.classList.add(className);
+      if(callback) {
+          callback();
+      }
+  }, delay);
+}
+
+// Leave animation
+function leaveAnimation(el, className, callback, delay = 500) {
+  el.classList.add(className + '--leave');
+  setTimeout(function() {
+      el.classList.remove(className + '--leave');
+      el.classList.remove(className);
+      if(callback) {
+          callback();
+      }
+  }, delay);
+}
+
+// Transition animation, calls enter and leave
+function transitionAnimation(toElement, fromElement, className, callback, delay) {
+  // If no elements, stop here
+  if(!toElement || !fromElement) {
+      return
+  }
+  // Leave animation
+  leaveAnimation(fromElement, className, function() {
+    // Enter animation
+      enterAnimation(toElement, className, function() {
+        // Callback
+          if(callback) {
+              callback();
+          }
+      }, delay);
+  }, delay);
+}
+
+/**
+ * Global Animations
+ */
+var gsapLoaded = new Promise(function(resolve) {
+  document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+
+Promise.all([gsapLoaded]).then(function() {
+  // If user prefers reduced motion, stop here
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // Animation for all animation groups
+  var animations = gsap.utils.toArray(".animation-group");
+  // Loop through animation groups
+  animations.forEach(function (animationGroup) {
+    // Set iteration - used to stagger animations within a group
+    var iteration = 0;
+    // Get all animation items within animation group (each item gets an iteration*0.33333s delay)
+    var animationItems = gsap.utils.toArray(".fade-left, .fade-right, .fade-up", animationGroup);
+    // Loop through items
+    animationItems.forEach((animationItem, i) => {
+      // Set animation start state
+      if (animationItem.classList.contains("fade-left")) {
+        // Fade left
+        var animationStartState = { autoAlpha: 0, x: 50 };
+      } else if (animationItem.classList.contains("fade-right")) {
+        // Fade right
+        var animationStartState = { autoAlpha: 0, x: -50 };
+      } else if (animationItem.classList.contains("fade-up")) {
+        // Fade up
+        var animationStartState = { autoAlpha: 0, y: 50 };
+      }
+      // Set animation end state
+      var animationEndState = { duration: 0.45, delay: iteration * 0.33333, autoAlpha: 1, y: 0, x: 0 }
+      // Create animation
+      var animation = gsap.fromTo( animationItem, animationStartState, animationEndState );
+      // Create scroll trigger for animation
+      ScrollTrigger.create({
+        trigger: animationGroup, // Animation group
+        animation: animation, // Animation
+        start: "top bottom-=150", // Animation starts 150px from the bottom of the viewport
+        once: true // Only run animation once
+      });
+      // Increment iteration
+      iteration++;
+    });
+  });
+  
+  // Animation for home page footer background
+  var footer_bg = document.querySelector(".layout-home .footer__background");
+  // Check if footer background exists
+  if (footer_bg) {
+    // Footer background animation
+    var clip_circle = gsap.fromTo(
+      footer_bg,
+      { opacity: 0, clipPath: "circle(0% at 50% 50%)", },
+      { duration: 2, opacity: 1, clipPath: "circle(100% at 50% 50%)", }
+    );
+    // Create scroll trigger for animation
+    ScrollTrigger.create({
+      trigger: ".footer__inner",
+      animation: clip_circle,
+      start: "top bottom-=150",
+      once: true,
+      ease: Power1.easeInOut,
+    });
+  }
+});
+
+// Scroll-to helper
+window.onload = function() {
+
+    // If the following function is undefined
+    if(typeof scrollToElement === 'undefined') { 
+
+        function scrollToElement(selector) {
+            var section = document.querySelector(selector);
+            if(!section) {
+                return;
+            }
+            // Height of navbar
+            var navbar = document.querySelector('.navbar');
+            var navbarHeight = 0;
+            if(navbar) {
+              navbarHeight = navbar.offsetHeight;
+            }
+            // Distance from target to top
+            var elementTop = section.getBoundingClientRect().top;
+            // Add distance from viewport to top
+            elementTop = elementTop + window.pageYOffset;
+            // On Desktop, smooth scroll
+            if(window.innerWidth > 991) {
+                window.scrollTo({
+                    top: elementTop - navbarHeight - 30,
+                    behavior: 'smooth'
+                });
+            } else {
+                // On mobile, snap to the top of section
+                window.scrollTo({
+                    top: elementTop - navbarHeight,
+                });
+            }
+            return;
+        }
+
+        var scrollToElementBtns = document.querySelectorAll( "[data-scroll-to-element]" );
+        if(scrollToElementBtns) {
+            scrollToElementBtns.forEach(function (scrollToElementBtn) {
+                scrollToElementBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    var selector = scrollToElementBtn.getAttribute("data-scroll-to-element");
+                    if(selector) {
+                        scrollToElement(selector);
+                    }
+                });
+            });
+        }
+
+    }
+}	</script>
+
+		<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2" as="style" id="swiper-css" media="all" onload="this.onload=null;this.rel='stylesheet';document.dispatchEvent(new Event('swiper-css-loaded'));"><noscript><link rel='stylesheet' id='swiper-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2' type='text/css' media='all' />
+</noscript><script src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/js/lazySizes.js?ver=6.8.2" defer id="lazysizes" onload="document.dispatchEvent(new Event('lazysizes-loaded'));"></script><style>
+.specials-banner { color: #fff; background-color: var(--color-quaternary); overflow: hidden; }
+.specials-banner__item { display: none; align-items: center; justify-content: center; font-family: var(--font-family-secondary); font-size: 15px; color: #fff; background-color: var(--color-quaternary); border: 1px solid var(--color-quaternary); padding: 7.5px var(--padding); text-align: center; }
+.specials-banner__item--small { font-size: 12px; }
+a.specials-banner__item:hover,
+a.specials-banner__item:focus { background-color: #fff; color: var(--color-quaternary); text-decoration: none; }
+.specials-banner__item--active, .specials-banner__item--active--enter, .specials-banner__item--active--leave { display: flex; }
+.specials-banner__item--active--enter { animation: specialsInLeft 0.5s ease-in-out; animation-fill-mode: forwards; }
+.specials-banner__item--active--leave { animation: specialsOutRight 0.5s ease-in-out; animation-fill-mode: forwards; }
+@media(min-width: 992px){
+    .specials-banner__item--small { font-size: 15px; }
+}
+@keyframes specialsInLeft {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes specialsOutRight {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(10px); }
+}
+</style>
+<style>
+
+/* Navbar */
+.navbar { position: relative; top: 0; left: 0; --navbar-color: var(--color-tertiary); width: 100%; z-index: var(--z-index-menu); background-color: #fff; color: var(--navbar-color); transition: 0.333333s all ease-out; } 
+.navbar__inner { padding: .8rem var(--padding); } 
+.navbar__navs { position: static; display: flex; align-items: center; justify-content: space-between; width: 100%; overflow: visible; }
+.navbar__brand { display: flex; max-height: 66px; max-width: 150px; z-index: var(--z-index-modal); }
+.navbar__brand img { object-fit: contain; object-position: left; }
+.navbar__nav { display: none; }
+.navbar__nav-inner { display: flex; flex-direction: column; }
+.navbar__menu { display: flex; justify-content: flex-end; align-items: center; padding-left: 0; margin-bottom: 0; margin-top: 0; }
+.navbar__item { color: inherit; font-family: var(--font-family-secondary); font-size: 15px; text-transform: uppercase; }
+.navbar__link { position: relative; }
+.navbar__link::after { content: ''; position: absolute; bottom: -5px; left: 50%; height: 2px; width: 0; transform: translate(-50%, 50%); background-color: var(--navbar-color); opacity: .9; transition: width .2s ease; }
+.navbar__link:hover,
+.navbar__link:focus { text-decoration: none; }
+.navbar__link:hover::after,
+.navbar__link:focus::after { width: 100%; }
+.navbar__link.active { color: var(--color-primary); opacity: 1; pointer-events: none; text-decoration: none; }
+.navbar__link.disabled { opacity: .5; pointer-events: none; }
+.navbar__utils { display: flex; justify-content: flex-end; align-items: center; padding-left: 0; margin-bottom: 0; margin-top: 0; }
+.navbar__utils-icon { margin-right: 2.5px; vertical-align: middle; }
+/* If the navbar is empty */
+.navbar__btn { font-family: var(--font-family-tertiary); font-size: 13px; color: #fff; background-color: var(--color-primary); min-width: initial; min-height: initial; padding: .5rem 1.5rem; border: 1px solid var(--color-primary) }
+.navbar__btn:hover,
+.navbar__btn:focus { color: var(--color-primary); background-color: #fff; }
+.navbar__btn--secondary {
+	color: #fff;
+	background-color: var(--color-secondary);
+	border: 1px solid var(--color-secondary);
+}
+.navbar__btn--secondary:hover,
+.navbar__btn--secondary:focus {
+	color: var(--color-secondary);
+	background-color: #fff;
+}
+
+@media(min-width: 992px) {
+	.navbar--home .navbar__btn.btn-bg {
+		color: var(--color-primary);
+		background-color: #fff;
+		border: 1px solid var(--color-primary);
+	}
+	.navbar--home .navbar__btn.btn-bg:hover,
+	.navbar--home .navbar__btn.btn-bg:focus {
+		color: #fff;
+		background-color: var(--color-primary);
+		border: 1px solid var(--color-primary);
+	}
+}
+
+
+
+/**
+* Navbar Animation
+*/
+.navbar.open .navbar__nav { opacity: 0; clip-path: inset(0 0 0% 0); animation: .5s mobileNav; animation-fill-mode: forwards; animation-timing-function: var(--animation-easing) 1s; }
+@keyframes mobileNav {
+	0% { opacity: .15; clip-path: inset(0 0 100% 0); }
+	100% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+
+/**
+* Home Layout Only
+*/  
+.navbar--home.navbar { position: absolute; --navbar-color: #fff; background-color: transparent; }
+.navbar--home.navbar.open .navbar__brand { filter: initial; }
+.navbar--home.navbar.navbar--scrolling { position: fixed; }
+.navbar--home .navbar__brand { filter: brightness(0) invert(1); }
+
+/**
+* Scrolling
+*/
+.navbar.navbar--scrolling { 
+	position: sticky; 
+	--navbar-color: var(--color-tertiary); 
+	background: #fff; 
+	color: var(--navbar-color); 
+	box-shadow: 0 2px 4px 0 var(--color-tertiary-transparent); 
+	border-bottom: 1px solid rgba( 255, 255, 255, 0.18 ); 
+}
+.navbar .scroll-only { display: none; }
+.navbar--scrolling .navbar__brand { filter: initial; }
+.navbar--scrolling .docked-only{ display: none; }
+
+/**
+* Toggler
+*/
+.navbar__toggler { display: block; stroke: var(--navbar-color); z-index: var(--z-index-modal); font-size: 16px; height: 72px; width: 100px; cursor: pointer; touch-action: manipulation; }
+.navbar__toggler path { fill: none; stroke: inherit; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; --length: 24; --offset: -38; stroke-dasharray: var(--length) var(--total-length); stroke-dashoffset: var(--offset); transition: all .5s var(--animation-easing); }
+.navbar__toggler path:nth-of-type(1),
+.navbar__toggler path:nth-of-type(3) { --total-length: 126.64183044433594; }
+.navbar__toggler path:nth-of-type(2) { --total-length: 70; }
+.navbar.open .navbar__toggler path:nth-of-type(1),
+.navbar.open .navbar__toggler path:nth-of-type(3) { --length: 22.627416998; --offset: -94.1149185097; }
+.navbar.open .navbar__toggler path:nth-of-type(2) { --length: 0; --offset: -50; }
+@media(max-width: 991px) {
+	.navbar--home.navbar.open { --navbar-color: var(--color-tertiary); }
+	.navbar.open { --navbar-color: var(--color-tertiary); }
+	.navbar__inner { position: relative; }
+	.navbar.open .navbar__nav { display: flex; flex-direction: column; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #ffffffdf; -webkit-backdrop-filter: blur(30px) saturate(3); backdrop-filter: blur(30px) saturate(3); z-index: var(--z-index-menu);  padding:  7.8rem 0 0; }
+	.navbar__nav-inner { overflow: auto; padding: 0 var(--padding); }
+	.navbar.open .navbar__menu,
+	.navbar.open .navbar__utils { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+	.navbar.open .navbar__menu { padding-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+	.navbar.open .navbar__item { font-size: 16px; line-height: 1; margin-bottom: 2rem; }
+	.navbar.open .navbar__link.router-link-active { color: grey; pointer-events: none; }
+	.navbar.open .navbar__utils { padding-top: 2rem; padding-bottom: 2rem; }
+	.navbar.open .navbar__utils .navbar__item { font-size: 15px; margin-bottom: 2rem; }
+	.navbar.open .navbar__utils .navbar__item:last-of-type { margin-bottom: 0; }
+	.navbar.open .utils-apply,
+	.navbar.open .navbar__btn { width: 100%; }
+	.navbar.open .utils-apply { margin-top: auto; }
+	.navbar.open .navbar__btn { font-size: 18px; padding: 1rem; }
+	.navbar.open .utils-tel { display: none; }
+	/* If the navbar is empty */
+	.navbar__menu.navbar-empty { display: none!important; }
+}
+@media(max-width: 1300px) and (min-width: 992px) {
+	.navbar--padding-small.navbar--scrolling .navbar__inner { padding: 1.6rem 1.2rem 1.2rem; }
+}
+@media(min-width: 992px) {
+	.navbar__inner { padding: 1.6rem var(--padding) 1.2rem; }
+	.navbar__brand { max-height: 71px; max-width: initial; }
+	.navbar__toggler { display: none; }
+	.navbar__nav { display: flex; flex-direction: column; flex-shrink: 0; }
+	.navbar__utils-item { font-size: 12px; }
+	.navbar__item { font-size: 12px; margin: 0 13px; }
+	.navbar__item:nth-last-child(2),
+	.navbar__item:nth-last-child(1) { margin-right: 0; }
+	.navbar__item:nth-last-child(1) { margin-right: 0; margin-left: 30px; }
+	.navbar__link:hover::after,
+	.navbar__link:focus::after,
+	.navbar__link:active::after { width: 85%; }
+	.navbar__utils { order: -1; margin-bottom: 1rem; }
+	.navbar__utils .navbar__item { margin: 0 14px; color: inherit; }
+	.navbar__utils .navbar__item.utils-apply { margin: 0 0 0 14px; }
+	.navbar__utils-icon { display: none; }
+	.navbar.navbar--scrolling .navbar__inner{ padding-top: .5rem; padding-bottom: .5rem; }
+	
+	/* if navbar is empty */
+	.navbar__menu.navbar-empty + .navbar__utils { margin-bottom: 0; }
+	.navbar--scrolling .scroll-only { display: block; }
+	.navbar--scrolling .docked-only-lg { display: none; }
+
+	.navbar--slim .navbar__utils { display: none; }
+	.navbar--slim .scroll-only { display: block; }
+
+	.navbar--home.navbar { transform: translateY(-30px); opacity: 0; transition: transform .666666s ease .25s, opacity .666666s ease .25s; }
+	.hero--loaded .navbar--home.navbar { transform: initial; opacity: 1; }
+}
+@media(min-width: 1240px) {
+	/* .navbar { min-height:  } */
+	.navbar__item { font-size: 16px; }
+	.navbar__utils-item { font-size: 14px; }
+	.navbar__item:nth-last-child(1) { margin-right: 0; }
+}
+</style>
+<link rel="preload" href="https://www.the9rio.com/wp-content/uploads/2023/11/index-hero.jpg" as="image"><style>
+.hero { position: relative; overflow: hidden; background-color: #040913; }
+.hero__bg::after { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(0deg, rgba(0, 0, 0, .025) 0, rgba(0, 0, 0, .025) 30%, rgba(0, 0, 0, .025) 73%, rgba(0, 0, 0, .4) 100%); opacity: 0; transition: opacity .5s var(--animation-easing); }
+.hero--loaded .hero__bg::after { opacity: 1; }
+.hero__bg-image { display: block; height: var(--device-height); width: 100%; object-fit: cover; opacity: 0; transform: scale(1.05); transition: opacity .5s var(--animation-easing), transform 2s var(--animation-easing); pointer-events: none; }
+
+/* Optional Mobile Background */
+/* End Optional Mobile Background */
+
+/* Optional Mobile Image Offset */
+/* End Optional Mobile Image Offset */
+
+.hero--loaded .hero__bg-image { opacity: 1; transform: scale(1); }
+.hero__video { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; opacity: 0; transition: clip-path 1.5s var(--animation-easing) 1s, opacity .5s var(--animation-easing); clip-path: polygon(0 0, 0 0, 0 0, 0 50%); }
+.hero--video-playing .hero__video{ opacity: 1; clip-path: polygon(-50% 0%, 200% 0, 0 200%, 0 -50%); }
+.hero__video iframe { position: absolute; top: 50%; left: 50%; width: var(--video-width); height: var(--video-height); transform: translate(-50%, -50%); }
+.hero__scroll-hint { display: flex; justify-content: center; align-items: center; position: absolute; bottom: 0; left: 50%; width: 10rem; height: 10rem; transform: translate(-50%, -88px); z-index: var(--z-index-base); transition: opacity .666666s ease .5s; cursor: pointer; }
+@media(min-width: 992px) {
+    .hero { background-color: #fff; }
+    .hero__video { display: block; }
+    .hero__scroll-hint { transform: translate(-50%, -35%); width: 142px; height: 142px; opacity: 1; }
+    .hero__bg-image { object-position: initial; }
+} 
+@media (prefers-reduced-motion) {
+    .scroll-hint-rotate { animation: none!important; }
+}
+</style>
+<style>
+.home-section-1 { position: relative; margin-bottom: var(--margin); background-size: contain; background-repeat: no-repeat; }
+.home-section-1__left-square { display: block; width: 20px; height: 62.16px; position: absolute; top: 0; left: 0; background-color: var(--color-primary); }
+.home-section-1__right { display: none; margin-top: var(--margin); }
+.home-section-1__title { font-family: var(--font-family-quaternary); color: var(--color-tertiary); text-transform: uppercase; }
+.home-section-1__title--line-1 { font-size: 3.5rem; display: block; line-height: 1.2; }
+.home-section-1__title--line-2 { font-family: var(--font-family-secondary); font-size: 15px; display: block; letter-spacing: 1.45px; text-transform: uppercase; }
+.panorama { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-flow: column; grid-column-gap: 1.8rem; }
+.panorama img { display: block; object-fit: cover; height: auto; width: 100%; } 
+.panorama__image-2 { margin-top: 32%; }
+.panorama__image-3 { margin-top: 64%; }
+@media(min-width: 992px) {
+    .home-section-1 { display: grid; grid-template-columns: auto 55%; padding-right: 1.5rem; grid-gap: 5rem; margin-top: 4.4rem; margin-bottom: 0; background-position: -20rem 50%; }
+    .home-section-1__title--line-1 { font-size: 4.1875rem; }
+    .home-section-1__title--line-2 { font-size: 1.375rem; letter-spacing: 5px; }
+    .home-section-1__left-square { width: var(--padding-less); height: 115px; transform: translate(0, 2.2rem); }
+    .home-section-1__left { padding-top: 1.6rem; }
+    .home-section-1__right { display: block; margin-top: 0; }
+}
+</style>
+<style>
+    .home-section-2 { font-family: var(--font-family-quaternary); white-space: nowrap; line-height: 1; margin-top: var(--margin); margin-bottom: var(--margin); }
+    .home-section-2__large { font-size: 5.78125rem; letter-spacing: 7.4px; position: relative; display: block; text-transform: uppercase; color: var(--color-primary-transparent);}
+    .home-section-2__small { font-size: 2.46875rem; display: block; color: var(--color-tertiary); margin-left: -2.5rem; margin-top: -2.5rem; }
+    @media(min-width: 767px) {
+        .home-section-2 { margin-top: 1.8rem; margin-bottom: 0; }
+        .home-section-2__large {  font-size: 11.5625rem; }
+        .home-section-2__small { font-size: 4.9375rem; margin-left: -5rem; margin-top: -5rem; }
+    }
+</style>
+<style>
+.home-section-3 { display: grid; padding-left: 0; gap: var(--margin); }
+.home-section-3__left { display: grid; grid-template-rows: 36% 1fr auto; grid-template-columns: var(--padding-less-complement) 11.33% auto; align-self: start; }
+.home-section-3__eyebrow { font-size: 1.375rem; display: block; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 0; }
+.home-section-3__title { font-size: 3.25rem; text-transform: uppercase; }
+.home-section-3__img { position: relative; grid-column: 2 / span 2; grid-row: 1 / span 2; }
+.home-section-3__img svg { display: block; position: relative; z-index: 1; }
+.home-section-3__img-square { grid-column: 1 / span 2; grid-row: 2 / span 2; background-color: var(--color-primary); max-height: 409px; }
+.home-section-3__arrow-button { grid-column: 3; grid-row: 3; display: flex; justify-content: center; align-items: center; padding: 1rem; min-height: 4.25rem }
+.home-section-3__right { padding-left: var(--padding); }
+.home-section-3__content { max-width: 550px; }
+.home-section-3__amenities { display: grid; grid-template-columns: auto auto; gap: 15px; margin-top: 1.8rem; display: grid; grid-template-columns: 1fr 1fr; }
+.home-section-3__amenity { font-family: var(--font-family-secondary); font-size: 14px; color: var(--color-tertiary); text-transform: uppercase; }
+.home-section-3__icon { align-items: center; display: flex; flex-direction: column; justify-content: center; row-gap: 0.8rem; font-size: 11px; text-align: center; }
+.home-section-3__icon svg { width: 48px; height: 48px; object-fit: contain; margin-bottom: .5rem; }
+@media(min-width: 767px) {
+    .home-section-3__amenities { grid-template-columns: 1fr 1fr 1fr; grid-row-gap: 3rem; }
+}
+@media(min-width: 992px) {
+    .home-section-3 { grid-template-columns: 53.817% auto; gap: 5rem; padding-left: var(--padding-less); padding-right: var(--padding); }
+    .home-section-3__right { padding-top: 5%; padding-left: 0; }
+    .home-section-3--no-amenities .home-section-3__right { padding-top: 25%; }
+}
+@media(min-width: 1200px) {
+    .home-section-3__icon { font-size: 13px; }
+    .home-section-3__icon svg { width: 56px; height: 56px; }
+}
+</style>
+
+<style>
+/* Section Styles */
+.home-section-4 { position: relative; text-align: center; }
+.home-section-4__content { max-width: 600px; margin: 0 auto 3rem; }
+.home-section-4__content p:last-of-type { margin-bottom: 0; }
+.home-section-4__floorplans { position: relative; }
+.home-section-4__floorplan-image { width: 300px; margin: 0 auto; margin-bottom: .5rem; }
+.home-section-4__floorplan-title { display: block; font-family: var(--font-family-secondary); font-size: 1.6rem; line-height: 1.33333; }
+/* Swiper styles */
+.home-section-4 .swiper-button-next.swiper-button-disabled, 
+.home-section-4 .swiper-button-prev.swiper-button-disabled { display: none; }
+.home-section-4 .swiper-button-next, 
+.home-section-4 .swiper-button-prev { color: #fff; background-color: var(--color-primary); border-radius: 0; width: 3.5rem; height: 3.5rem; top: 50%; transform: translateY(-50%); z-index: 1; }
+.home-section-4 .swiper-button-next:after, 
+.home-section-4 .swiper-button-prev:after { font-size: 15px; font-weight: 600; }
+.home-section-4 .swiper-button-next, 
+.home-section-4 .swiper-rtl .swiper-button-prev { right: 0; }
+.home-section-4 .swiper-button-prev, 
+.home-section-4 .swiper-rtl .swiper-button-next { left: 0; }
+/* Some pre-initialization css to prevent layout shift */
+.home-section-4 .swiper:not(.swiper-initialized) .swiper-wrapper { display: flex; align-items: center; justify-content:center; }
+.home-section-4 .swiper:not(.swiper-initialized) .swiper-slide { flex: 0 0 auto; width: 300px; margin: 0 1rem; }
+.home-section-4 .swiper-button-prev,
+.home-section-4 .swiper-button-next { position: absolute; top: 50%; transform: translateY(-50%); }
+@media(min-width: 992px) {
+    .home-section-4__floorplans { margin-bottom: 2rem; }
+    .home-section-4 .swiper-slide::after  { content: ''; height: 90%; width:1px; background-color: #b2b2b2; position: absolute; top: 50%; right: -50px; transform: translateY(-50%); }
+    .home-section-4 .swiper-button-next,
+    .home-section-4 .swiper-rtl .swiper-button-prev { top: 50%; transform: translate(100%, -50%); }
+    .home-section-4 .swiper-button-prev,
+    .home-section-4 .swiper-rtl .swiper-button-next { top: 50%; transform: translate(-100%, -50%); }
+}
+</style>
+<style>
+.home-section-5 { display: grid; grid-template-columns: 17% 26% auto var(--padding); grid-template-rows: 6% auto auto auto 62.16px; padding: 0; margin-top: var(--margin); margin-bottom: var(--margin); }
+.home-section-5__eyebrow { font-size: 1.375rem; display: block; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 0; }
+.home-section-5__title { font-size: 3.25rem; text-transform: uppercase; }
+.home-section-5__image-1 { position: relative; grid-row: 1 / span 3; grid-column: 1 / span 2; z-index: 1; }
+.home-section-5__image-2 { position: relative; grid-row: 2; grid-column: 2 / span 2; z-index: 1; }
+.home-section-5 img { max-width: 100%; height: auto; display: block; }
+.home-section-5__impact-text { grid-row: 1; grid-column: 3 / -1; overflow: hidden; }
+.home-section-5__impact-text__inner { display: none; }
+.home-section-5__content { grid-row: 4 / -1; grid-column: 1 / -1; padding-left: var(--padding); padding-right: var(--padding); margin-top: var(--margin); margin-bottom: 0; position: relative; }
+.home-section-5__square { background-color: var(--color-primary); grid-row: 5; grid-column: 4; }
+.home-section-5__arrow-button { display: none; }
+@media(min-width: 992px) {
+    .home-section-5 { grid-template-columns: 10.204% 15.25% 27% 35.308% 12.238%; grid-template-rows: auto 2rem auto 7.25rem; padding-left: var(--padding-less); padding-right: var(--padding); padding-top: 55px; }
+    .home-section-5__image-1 { grid-row: 1 / -1; grid-column: 1 / span 2; }
+    .home-section-5__image-2 { grid-row: 2 / span 2; grid-column: 2 / span 2; }
+    .home-section-5__impact-text { grid-row: 1 / span 2; overflow: initial; }
+    .home-section-5__impact-text__inner { position: relative; display: block; font-family: var(--font-family-quaternary); font-size: 11.25rem; white-space: nowrap; letter-spacing: -4px; line-height: .66; margin-top: 0; text-transform: uppercase; color: var(--color-primary-transparent); z-index: 0; }
+    .home-section-5__content { grid-row: 2 / span 3; grid-column: 4 / span 2; max-width: 580px; padding: 4rem 4rem 0 5rem; margin: 0; }
+    .home-section-5__square { grid-row: 4; grid-column: 5; }
+}
+@media(min-width: 1200px) {
+    .home-section-5__content { padding: 5.7rem 4rem 0 5rem; }
+    .home-section-5__arrow-button { display: flex; grid-column: 3; grid-row: 4; align-items: center; justify-content: center; padding: 1rem; }
+}
+</style>
+<style>
+.home-section-6 { display: flex; flex-direction: column; position: relative; }
+.home-section-6__left { position: relative; color: #fff; background-color: var(--color-primary); font-size: 16px; font-family: var(--font-family-tertiary); max-width: 27.1666666667rem; display: flex; justify-content: center; align-items: center; padding: var(--margin) var(--padding) var(--margin) var(--padding); line-height: 1.5; z-index: 1; order: 2; margin-top: -6rem; min-height: 14.5rem; }
+.home-section-6__graphic { position: absolute; top: 1.5625rem; left: 1.5625rem; width: 7.3125rem; pointer-events: none; }
+.home-section-6__right img { display: block; max-width: 100%; height: auto; }
+.home-section-6__quote { display: grid; align-items: center; }
+.home-section-6__author { display: block; font-size: 14px; text-align: right; margin-top: 10px; }
+.home-section-6__content { display: none; }
+.home-section-6__content--active { display: block; }
+.home-section-6__content--active--enter { display: block; animation: quoteInLeft 0.5s ease-in-out; animation-fill-mode: forwards; }
+.home-section-6__content--active--leave { display: block; animation: quoteOutRight 0.5s ease-in-out; animation-fill-mode: forwards; }
+@keyframes quoteInLeft {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes quoteOutRight {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(10px); }
+}
+@media(min-width: 767px) {
+    .home-section-6 { flex-direction: row; justify-content: flex-end; align-items: center; padding-left: var(--padding); padding-right: var(--padding); }
+    .home-section-6__left { position: absolute; left: var(--padding); font-size: 1.5rem; min-height: 21rem; max-width: 35.9375rem; padding: 3rem 3.4rem 3rem 5.8rem; letter-spacing: 0.05em; margin-top: 0; }
+    .home-section-6__right { max-width: 85%; }
+}
+</style>
+<style>
+.home-section-7 { display: grid; padding-right: 0; }
+.home-section-7__left { padding-right: var(--padding); }
+.home-section-7__eyebrow { font-size: 1.375rem; display: block; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 0; }
+.home-section-7__title { font-size: 3.25rem; text-transform: uppercase; }
+.home-section-7__gmap { display: none; position: relative; background-color: var(--color-secondary); padding-top: 90.4761904762%; overflow: hidden; grid-column: 1 / span 2; grid-row: 1 / span 2; z-index: 1; }
+.home-section-7__img-square {  display: none; grid-column: 2 / span 2; grid-row: 2 / span 2; background-color: var(--color-primary); max-height: 409px; }
+.home-section-7 .location-groups { display:none; padding-left: 3rem; }
+.home-section-7 .location-group { position: relative; margin-bottom: 1.5rem; pointer-events: none; background-color: transparent; border: none; padding: 0; }
+.home-section-7 .location-group__icon svg { position: absolute; left: 0; top: 0; transform: translate(-150%, 30%);  width: 18px; height: auto; }
+.home-section-7 .location-group__icon svg path { fill: var(--color-primary)!important; }
+.home-section-7 .location-group.location-group--active svg path { fill: var(--color-secondary)!important; }
+.home-section-7 .location-group__label { font-family: var(--font-family-secondary); font-size: 14px; text-transform: uppercase; color: var(--color-tertiary); }
+.home-section-7 .location-group__value { display: block; font-family: var(--font-family-primary); font-size: 11px; color: #000; }
+@media(min-width: 992px) {
+    .home-section-7 { grid-template-columns: auto 53.817%; gap: 5rem; padding-left: var(--padding); padding-right: var(--padding-less); }
+    .home-section-7__left { padding-top: 5rem; padding-right: 0; }
+    .home-section-7 .location-group__label { font-size: 1.125rem; }
+    .home-section-7 .location-group__value { font-size: 14px; }
+    .home-section-7__right { display: grid; grid-template-rows: 36% 1fr auto; grid-template-columns: auto 11.33% var(--padding-less-complement); align-self: start; }
+    .home-section-7__gmap,
+    .home-section-7__img-square { display: block; }
+    .home-section-7 .location-groups { display: block; }
+    .home-section-7 .location-group { cursor: pointer; pointer-events: all; }
+    .home-section-7__arrow-button { grid-column: 1; grid-row: 3; display: flex; justify-content: center; align-items: center; padding: 1rem; min-height: 4.25rem; }
+}
+</style>
+<style>
+.home-section-8 { display: grid; padding-left: 0; padding-right: 0; }
+.home-section-8 img { display: block; max-width: 100%; height: auto; }
+.home-section-8__1 { order: 2; }
+.home-section-8__2 { padding: 0 var(--padding); margin: 0 0 var(--margin); order: 1; }
+.home-section-8__3 { padding: 0 var(--padding); margin: var(--margin) 0 0; order: 3; }
+.home-section-8__4 { display: none; }
+@media(min-width: 992px) {
+    .home-section-8 { display: grid; grid-template-rows: 1fr 0.1fr 1fr; grid-template-columns: 1fr 0.25fr 1fr; padding-left: 3.7rem; padding-right: 3.7rem; }
+    .home-section-8__1 { grid-column: 1 / span 2; grid-row: 1 / span 2; }
+    .home-section-8__2,
+    .home-section-8__3 { padding: 3rem; margin: 0; }
+    .home-section-8__2 { grid-column: 3; grid-row: 1; }
+    .home-section-8__3 { grid-column: 1; grid-row: 3; }
+    .home-section-8__4 { display: block; grid-column: 2 / span 2; grid-row: 2 / span 2; }
+    .home-section-8 img { height: 100%; object-fit: cover; }  
+}
+@media(min-width: 1200px) {
+    .home-section-8__2,
+    .home-section-8__3 { padding: 5rem; }
+}
+</style>
+<style>
+.sns { text-align: center; margin: -3.75px; }
+.sns__item { display: inline-block; vertical-align: bottom; margin: 3.75px;  }
+.sns__link { color: #fff; background-color: var(--color-secondary); width: 36px; height: 36px; border: 2px solid var(--color-secondary); border-radius: 50px; padding: 9px; display: flex; justify-content: center; align-items: center; transition: .15s ease; }
+.sns__link:hover, .sns__link:focus { color: var(--color-secondary); background-color: #fff; }
+.sns__link svg { width: 16px; height: 16px; }
+.sns__link svg * { fill: #fff; }
+.sns__link:hover svg *,
+.sns__link:focus svg * { fill: var(--color-secondary); }
+@media(min-width: 992px) {
+    .sns { text-align: left; }
+}
+@media(min-width: 1440px){
+    .sns__link { width: 40px; height: 40px; }
+}
+.btn-review { font-size: 13px; min-width: initial; min-height: initial; padding: .5rem 1.4rem; }
+</style>
+<style>
+.footer-nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2.4rem; }
+.footer-nav__item { font-family: var(--font-family-tertiary); font-size: 13px; margin-bottom: .5rem; }
+.footer-nav__item::after { content: '|'; }
+.footer-nav__item:last-of-type::after { display: none; }
+.footer-nav__item:last-of-type + .footer-nav__link { margin-right: 0; }
+.footer-nav__link { margin-left: 8px; margin-right: 8px; }
+.footer-nav__link:hover, .footer-nav__link:focus, .footer-nav__link.active { text-decoration: underline; }
+@media(min-width: 992px) {
+	.footer-nav { margin-top: 0; }
+	.footer-nav__item { margin-bottom: 0; }
+}
+@media(min-width: 1440px) {
+	.footer-nav__item { font-size: 14px; }
+}
+</style>
+<style>
+.footer__copyright { font-family: var(--font-family-tertiary); font-size: 9px; text-transform: uppercase; display: grid; justify-content: space-between; align-items: center; grid-template-columns: auto auto; grid-gap: 1rem; }
+.footer__copyright__content { display: flex; justify-content: center; align-items: center; margin-bottom: var(--footer-block-margin); }
+.footer__copyright__jumpem { text-align: center; line-height: 1.2; margin-bottom: var(--footer-block-margin); }
+.footer__copyright__jumpem span { font-family: var(--font-family-tertiary); font-weight: 500; margin-right: 2.5px; }
+.footer__copyright__jumpem a { display: block; font-family: var(--font-family-quaternary); font-weight: 900; color: #29b354; font-size: 135%; text-decoration: none; }
+@media (min-width: 992px) {
+	.footer__copyright__jumpem a { display: inline-block; }
+}
+@media (min-width: 992px) {
+    .footer__copyright { font-size: 12px; padding: 1.2rem 2.45% 1.4rem 4%; }
+}
+@media (min-width: 1440px) {
+	.footer__copyright { padding: 1.2rem 2.45% 1.4rem 6%; }
+}
+</style>
+<style>
+.footer-message { padding: 0.5rem var(--padding); color: #fff; background-color: var(--color-primary); text-align: center; font-family: var(--font-family-secondary); font-size: 14px; margin-bottom: -5px; }
+
+.footer { border-top: 8px solid var(--color-primary); }
+.footer__inner { position: relative; grid-gap: 1px; padding: 0 20px 0; --footer-block-margin: 1.5rem; }
+.footer__inner > * { position: relative; color: #000; background-color: #fff; z-index: 1; }
+.footer__background { display: block; content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #fff; }
+.footer__logo { margin-top: var(--footer-block-margin); margin-bottom: var(--footer-block-margin); }
+.footer__logo img { margin-left: auto; margin-right: auto; max-width: 250px; text-align: center; }
+.footer__info { margin-bottom: var(--footer-block-margin); }
+.footer__info-container { text-align: center; margin-bottom: var(--footer-block-margin); }
+.footer__footer-label, 
+.footer__footer-value  { display: block; font-family: var(--font-family-tertiary); }
+.footer__footer-label { font-size: 15px; color: var(--color-primary); text-transform: uppercase; margin-top: 2rem; }
+.footer__footer-value { font-size: 13px; }
+.footer__hours { max-width: 270px; margin: auto; }
+.footer__navigation { display: flex; justify-content: space-between; align-items: center; flex-direction: column; margin-bottom: var(--footer-block-margin); }
+.footer__corporate { display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: var(--footer-block-margin); }
+.footer__hour { display: flex; justify-content: space-between; }
+.footer__hour .footer__footer-value:first-child { margin-right: 2.6rem; }
+
+.footer__navigation__message,
+.footer__navigation__message > * { font-family: var(--font-family-tertiary); font-size: 11px; font-weight: 500; text-align:center; }
+.footer__navigation__message > * { margin-bottom: 0.5rem; }
+.footer__navigation__message > *:last-child { margin-bottom: 0; }
+
+.footer__info-block--address { display: flex; flex-wrap: wrap; max-width: 400px; margin: auto; column-gap: 1rem; }
+.footer__group { flex: 1 1 calc(50% - 0.5rem); }
+@media (min-width: 992px) {
+	.footer__footer-label { font-size: 16px; }
+	.footer__info-block--address {  display: block; max-width: initial; margin: 0; }
+	.footer__group { flex: 1 1 100%; }
+	.footer__group + .footer__group { margin-top: 1.2rem; }
+}
+@media (min-width: 992px) {
+	.footer__inner { --footer-block-margin: 0; display: grid; grid-template-areas: "footer-logo footer-info" "footer-logo footer-nav" "footer-corporate footer-copyright"; grid-template-rows: auto auto auto auto; grid-template-columns: 1fr 3.3fr; padding-left: 0; padding-right: 0; }
+	.footer__logo { grid-area: footer-logo; padding: 15px; display: flex; justify-content: center; align-items: center; width: 100%; }
+	.footer__logo img { max-width: initial; }
+	.footer__background { display: block; content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #9ba3b2; }
+	.footer__info { grid-area: footer-info; padding: 2.4rem 4% 2.7rem 5%; }
+	.footer__info-block { margin-bottom: 0; }
+	.footer__info-container { display: grid; grid-auto-flow: column; grid-gap: 2.4rem; justify-content: space-between; text-align: initial; max-width: 910px; }
+	.footer__footer-label { margin-top: 0; }
+	.footer__footer-label + .footer__footer-value + .footer__footer-label { margin-top: 1.2rem; }
+
+	/* Make the Address Field Bigger if it's all that's there */
+	.footer__info-block--big-address { display: grid; grid-template-columns: auto auto; row-gap: 1.2rem; column-gap: 3rem; }
+	.footer__info-block--big-address .footer__group + .footer__group { margin-top: 0; }
+
+	.footer__hours { max-width: initial; }
+  	.footer__navigation { grid-area: footer-nav; flex-direction: row; padding: 1.6rem 4% 1.4rem 5%; }
+  	.footer__corporate { grid-area: footer-corporate; padding: 1rem; text-align: center; }
+  	.footer__copyright {grid-area: footer-copyright; }
+}
+@media (min-width: 1200px) {
+  .footer__inner { grid-template-areas: "footer-logo footer-info" "footer-logo footer-nav" "footer-corporate footer-copyright"; grid-template-columns: 1fr 2.23fr; grid-template-rows: auto auto auto; }
+  .footer__footer-value { font-size: 14px; }
+}
+@media (min-width: 1440px) {
+	.footer__info { padding: 2.4rem 2.45% 2.7rem 6%; }
+  	.footer__navigation { padding: 1.6rem 2.45% 1.4rem 6%; }
+}
+
+@media(max-width: 991px) {
+	.footer__info-block--call-text { display: grid; grid-template-rows: auto auto; grid-template-columns: auto; grid-auto-flow: column; max-width: 400px; margin: auto; grid-column-gap: 1rem; }
+}
+</style>
+<style>
+/* Mobile Buttons */
+.mobile-buttons { position: fixed; bottom: 0; left: 0; width: 100%; display: flex; z-index: var(--z-index-overlay); }
+.mobile-buttons a { display: flex; align-items: center; justify-content: center; flex-basis: auto; flex-shrink: 0; flex-direction: column; color: var(--color-tertiary); background-color: #fff; min-height: 48px; width: 80px; text-decoration: none; font-family: var(--font-family-secondary); font-size: 11px; line-height: 1; transition: all .15s ease; border-top: 1px solid #9ba3b2; border-right: 1px solid #9ba3b2; text-transform: uppercase; } 
+.mobile-buttons a:hover, .mobile-buttons a:focus, .mobile-buttons a:active { background-color: var(--color-secondary); color: #fff; }
+.mobile-buttons a:last-of-type { flex-shrink: 1;  background-color: var(--color-primary); color: #fff;font-size: 14px; flex-direction: row; width: 100%; border-right: 0; }
+.mobile-buttons a .icon { font-size: 16px; }
+.mobile-buttons a svg { height: 12px; width: 12px; fill: var(--color-tertiary); margin-bottom: 8px; }
+.mobile-buttons a:hover svg, .mobile-buttons a:focus svg { fill: #fff; }
+.mobile-buttons a:last-of-type svg { fill: #fff; height: 10px; width: 10px; margin-bottom: 0; margin-left: 4px; }
+.mobile-buttons a:hover:last-of-type, .mobile-buttons a:focus:last-of-type { background-color: #fff; color: var(--color-primary); }
+.mobile-buttons a:hover:last-of-type svg, .mobile-buttons a:focus:last-of-type svg { fill: var(--color-primary); }
+@media(min-width: 992px) {
+    .mobile-buttons { display: none; }
+}
+</style>
+<link rel="icon" href="https://www.the9rio.com/wp-content/uploads/2023/11/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.the9rio.com/wp-content/uploads/2023/11/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.the9rio.com/wp-content/uploads/2023/11/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.the9rio.com/wp-content/uploads/2023/11/cropped-favicon-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.floorplan__price--slash + .floorplan__price--value { color: red; }		</style>
+		
+
+		
+				<script>
+			window.dataLayer = window.dataLayer || [];
+		</script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-W7P5NZJ');</script>
+		<!-- End Google Tag Manager -->
+	
+			<script type="text/javascript" src="//cdn.evgnet.com/beacon/b55685555563zb52g3n3n3o091566838/urban_engage/scripts/evergage.min.js"></script>
+	</head>
+
+<body class="main-theme layout-home">
+
+				<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7P5NZJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		
+	
+
+
+	
+
+
+<nav class="navbar navbar--home  navbar--padding-small">
+
+			<div class="specials-banner docked-only">
+                                        <a 
+                class="specials-banner__item specials-banner__item--active " 
+                href="/contact/"
+                                                            >
+                                    <span>
+                        Sign By Move-in Day And Get a $500 Gift Card!
+                    </span>
+                            </a>
+                                                <a 
+                class="specials-banner__item  specials-banner__item--small" 
+                href="/resources/"
+                                                            >
+                                    <span>
+                        Are you a new student in Austin, a returning student, a parent/Guarantor looking for more information? Click here!
+                    </span>
+                            </a>
+            </div>
+
+	
+	<div class="navbar__inner">
+
+		<div class="navbar__navs container">
+
+			<!-- Logo -->
+							<a href="https://www.the9rio.com" class="navbar__brand" title="The Nine at Rio">
+					
+
+
+    <img 
+        class="img-fluid "
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzUycHgiIGhlaWdodD0iMTU2cHgiIHZpZXdCb3g9IjAgMCAzNTIgMTU2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNTIgMTU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0I4NjY0NTt9Cgkuc3Qxe2NsaXAtcGF0aDp1cmwoI1NWR0lEXzAwMDAwMTMyODA5MTU4NzE1ODg0MjU0NjQwMDAwMDA1MTYwMTY0NDU3MjAzOTI3NzI2Xyk7ZmlsbDojMDA3QjlBO30KCS5zdDJ7Y2xpcC1wYXRoOnVybCgjU1ZHSURfMDAwMDAwNzI5NjkxODQ4Nzk1MTUzNjI1NDAwMDAwMTU4MTk4MTUzOTkxNjQ4NTk1NzFfKTtmaWxsOiNCODY2NDU7fQoJLnN0M3tmaWxsOm5vbmU7c3Ryb2tlOiNCODY2NDU7c3Ryb2tlLXdpZHRoOjMuMTMyODtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cgkuc3Q0e2ZpbGw6IzdEODY4Nzt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTIxMC44LDExNS43aC02OS4xYy0xMSwwLTIwLjUtOC45LTIyLjctMjEuM2wtMC4yLTAuOWg5MmMwLDAsMC4yLTAuMSwwLjItMC4zVjcwLjRjMC0wLjEsMC0wLjItMC4yLTAuMmgtNjkuMSAgIGMtMTIuNCwwLTIyLjYtMTAuMi0yMi42LTIyLjZWMjMuMWMwLTEyLjQsMTAuMi0yMi42LDIyLjYtMjIuNmg2OS4xYzEyLjMsMCwyMi40LDEwLjIsMjIuNCwyMi42djcwLjEgICBDMjMzLjIsMTA1LjYsMjIzLjEsMTE1LjcsMjEwLjgsMTE1Ljd6IE0xMjAuNyw5NWMyLjMsMTEuMSwxMSwxOS4xLDIxLDE5LjFoNjkuMWMxMS41LDAsMjAuOC05LjQsMjAuOC0yMXYtNzAgICBjMC0xMS42LTkuMy0yMS0yMC44LTIxaC02OS4xYy0xMS42LDAtMjEsOS40LTIxLDIxdjI0LjZjMCwxMS42LDkuNCwyMSwyMSwyMWg2OS4xYzEsMCwxLjcsMC44LDEuNywxLjd2MjIuN2MwLDEtMC44LDEuOS0xLjcsMS45ICAgTDEyMC43LDk1TDEyMC43LDk1eiBNMjEyLjUsNDkuNWgtNzAuOGMtMSwwLTEuNy0wLjgtMS43LTEuN1YyMy4xYzAtMS4xLDAuNy0xLjksMS43LTEuOWg2OS4xYzAuOSwwLDEuNywwLjksMS43LDEuOUwyMTIuNSw0OS41ICAgTDIxMi41LDQ5LjV6IE0yMTAuNywyMi44aC02OS4xYy0wLjEsMC0wLjIsMC0wLjIsMC4zdjI0LjZjMCwwLjIsMC4xLDAuMiwwLjIsMC4yaDY5LjNWMjMuMUMyMTAuOSwyMi45LDIxMC44LDIyLjgsMjEwLjcsMjIuOHoiPjwvcGF0aD4KCTxnPgoJCTxnPgoJCQk8Zz4KCQkJCTxkZWZzPgoJCQkJCTxwYXRoIGlkPSJTVkdJRF8xXyIgZD0iTTE0MS42LDY5LjVjLTEyLDAtMjEuOC05LjgtMjEuOC0yMS44VjIzLjFjMC0xMiw5LjgtMjEuOCwyMS44LTIxLjhoNjkuMWMxMiwwLDIxLjYsOS44LDIxLjYsMjEuOHY3MC4xICAgICAgIGMwLDEyLTkuNiwyMS44LTIxLjYsMjEuOGgtNjkuMWMtMTAuOCwwLTE5LjktOS0yMS45LTIwLjdoOTEuMWMwLjUsMCwwLjktMC41LDAuOS0xLjFWNzAuNWMwLTAuNy0wLjUtMC45LTAuOS0wLjlMMTQxLjYsNjkuNSAgICAgICBMMTQxLjYsNjkuNXogTTE0MC42LDQ3LjdjMCwwLjUsMC4zLDAuOSwwLjksMC45aDcwLjFWMjMuMWMwLTAuNy0wLjUtMS4xLTAuOS0xLjFoLTY5LjFjLTAuNywwLTAuOSwwLjUtMC45LDEuMUwxNDAuNiw0Ny43ICAgICAgIEwxNDAuNiw0Ny43eiI+PC9wYXRoPgoJCQkJPC9kZWZzPgoJCQkJPGNsaXBQYXRoIGlkPSJTVkdJRF8wMDAwMDEyOTIwMDYyNDYxNzk4NzM3MDU4MDAwMDAwODc5ODI5NjE4OTE2MjA2MTk4NF8iPgoJCQkJCTx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzFfIiBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiPjwvdXNlPgoJCQkJPC9jbGlwUGF0aD4KCQkJCTxwb2x5Z29uIHN0eWxlPSJjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDEyOTIwMDYyNDYxNzk4NzM3MDU4MDAwMDAwODc5ODI5NjE4OTE2MjA2MTk4NF8pO2ZpbGw6IzAwN0I5QTsiIHBvaW50cz0iICAgICAgMjM5LjUsMTIzLjEgMTAxLjUsLTE4LjQgMjMyLjksLTI0LjMgICAgICI+PC9wb2x5Z29uPgoJCQk8L2c+CgkJCTxnPgoJCQkJPGRlZnM+CgkJCQkJPHBhdGggaWQ9IlNWR0lEXzAwMDAwMTIwNTI1OTYzODU5NjQxNzA0MjcwMDAwMDAzOTg4NzA0NzExMTQxMjc1MDQ1XyIgZD0iTTE0MS42LDY5LjVjLTEyLDAtMjEuOC05LjgtMjEuOC0yMS44VjIzLjEgICAgICAgYzAtMTIsOS44LTIxLjgsMjEuOC0yMS44aDY5LjFjMTIsMCwyMS42LDkuOCwyMS42LDIxLjh2NzAuMWMwLDEyLTkuNiwyMS44LTIxLjYsMjEuOGgtNjkuMWMtMTAuOCwwLTE5LjktOS0yMS45LTIwLjdoOTEuMSAgICAgICBjMC41LDAsMC45LTAuNSwwLjktMS4xVjcwLjVjMC0wLjctMC41LTAuOS0wLjktMC45TDE0MS42LDY5LjVMMTQxLjYsNjkuNXogTTE0MC42LDQ3LjdjMCwwLjUsMC4zLDAuOSwwLjksMC45aDcwLjFWMjMuMSAgICAgICBjMC0wLjctMC41LTEuMS0wLjktMS4xaC02OS4xYy0wLjcsMC0wLjksMC41LTAuOSwxLjFMMTQwLjYsNDcuN0wxNDAuNiw0Ny43eiI+PC9wYXRoPgoJCQkJPC9kZWZzPgoJCQkJPGNsaXBQYXRoIGlkPSJTVkdJRF8wMDAwMDA4ODg0MjE0ODgxMDY3Njg5NDAzMDAwMDAxMzkwODA4NTQzNTc0ODAxMzQ5NV8iPgoJCQkJCTx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzAwMDAwMTIwNTI1OTYzODU5NjQxNzA0MjcwMDAwMDAzOTg4NzA0NzExMTQxMjc1MDQ1XyIgc3R5bGU9Im92ZXJmbG93OnZpc2libGU7Ij48L3VzZT4KCQkJCTwvY2xpcFBhdGg+CgkJCQk8cG9seWdvbiBzdHlsZT0iY2xpcC1wYXRoOnVybCgjU1ZHSURfMDAwMDAwODg4NDIxNDg4MTA2NzY4OTQwMzAwMDAwMTM5MDgwODU0MzU3NDgwMTM0OTVfKTtmaWxsOiNCODY2NDU7IiBwb2ludHM9IiAgICAgIDIzOS41LDEyMy4xIDEwMS41LC0xOC40IDEwMC4zLDEyNC42ICAgICAiPjwvcG9seWdvbj4KCQkJPC9nPgoJCQk8Zz4KCQkJCTxwYXRoIGlkPSJYTUxJRF8xOV8iIGNsYXNzPSJzdDMiIGQ9Ik0xNDEuNiw2OS41Yy0xMiwwLTIxLjgtOS44LTIxLjgtMjEuOFYyMy4xYzAtMTIsOS44LTIxLjgsMjEuOC0yMS44aDY5LjEgICAgICBjMTIsMCwyMS42LDkuOCwyMS42LDIxLjh2NzAuMWMwLDEyLTkuNiwyMS44LTIxLjYsMjEuOGgtNjkuMWMtMTAuOCwwLTE5LjktOS0yMS45LTIwLjdoOTEuMWMwLjUsMCwwLjktMC41LDAuOS0xLjFWNzAuNSAgICAgIGMwLTAuNy0wLjUtMC45LTAuOS0wLjlMMTQxLjYsNjkuNUwxNDEuNiw2OS41eiBNMTQwLjYsNDcuN2MwLDAuNSwwLjMsMC45LDAuOSwwLjloNzAuMVYyMy4xYzAtMC43LTAuNS0xLjEtMC45LTEuMWgtNjkuMSAgICAgIGMtMC43LDAtMC45LDAuNS0wLjksMS4xTDE0MC42LDQ3LjdMMTQwLjYsNDcuN3oiPjwvcGF0aD4KCQkJPC9nPgoJCTwvZz4KCQk8Zz4KCQkJPHBhdGggY2xhc3M9InN0NCIgZD0iTTE1OC4yLDE0MC42aDEuNGwtMS43LDYuOWMtMC4xLDAuNC0wLjIsMC43LTAuMiwxYzAsMC43LDAuNCwxLjEsMS40LDEuMWMwLjcsMCwxLjYtMC4zLDIuNS0xLjEgICAgIGMxLjQtMS4yLDIuMy0zLjIsMi4zLTUuNWMwLTQuMi0zLjMtNy4xLTguNy03LjFjLTIuNywwLTUuMSwwLjgtNi45LDIuNWMtMi4zLDItMy40LDQuNi0zLjQsNy43YzAsMi44LDAuOSw0LjksMyw2LjUgICAgIGMxLjYsMS4zLDMuOSwyLDYuNSwyYzIuOCwwLDUuNS0wLjgsNy42LTIuM2wwLjUsMC44Yy0yLjQsMS44LTUuMSwyLjctOCwyLjdjLTMuMSwwLTUuNi0wLjgtNy42LTIuMmMtMi41LTEuOS0zLjctNC40LTMuNy03LjYgICAgIGMwLTIuNywwLjgtNSwyLjUtN2MyLjMtMi44LDUuNy00LjQsOS43LTQuNGMyLjcsMCw1LjIsMC44LDYuOCwyYzIuMSwxLjYsMy4yLDMuOCwzLjIsNi4yYzAsMi44LTEuMSw1LjEtMyw2LjYgICAgIGMtMS4xLDAuOS0yLjUsMS40LTMuOCwxLjRjLTEuNiwwLTIuNC0wLjYtMi40LTEuOWMwLTAuMSwwLTAuMiwwLTAuM2MtMC44LDEuNC0yLjEsMi4yLTMuNiwyLjJjLTIuNSwwLTMuOC0xLjQtMy44LTQgICAgIGMwLTMuOCwyLjYtNi43LDUuNy02LjdjMS41LDAsMi41LDAuNywzLjEsMS45TDE1OC4yLDE0MC42eiBNMTU3LjEsMTQzLjZjLTAuMy0xLjUtMS4yLTIuMy0yLjUtMi4zYy0yLjQsMC00LjEsMi41LTQuMSw1LjYgICAgIGMwLDEuOCwwLjksMi44LDIuNCwyLjhjMS42LDAsMy4xLTEuMiwzLjUtMy4xTDE1Ny4xLDE0My42eiI+PC9wYXRoPgoJCQk8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMTc1LjQsMTM4aDIuMnYzYzEuMy0yLjUsMi42LTMuNCw0LjgtMy40YzAuNiwwLDEuMSwwLjEsMS43LDAuM2wtMC44LDIuMmMtMC41LTAuMi0xLTAuMy0xLjUtMC4zICAgICBjLTIuNiwwLTMuOSwxLjktMy45LDUuNnY3aC0yLjVWMTM4eiI+PC9wYXRoPgoJCQk8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMTg4LDEyOS4zYzEsMCwxLjgsMC44LDEuOCwxLjhzLTAuOCwxLjctMS44LDEuN2MtMSwwLTEuOC0wLjgtMS44LTEuOEMxODYuMiwxMzAuMSwxODYuOSwxMjkuMywxODgsMTI5LjN6ICAgICAgTTE4Ni43LDEzOGgyLjV2MTQuM2gtMi41VjEzOHoiPjwvcGF0aD4KCQkJPHBhdGggY2xhc3M9InN0NCIgZD0iTTE5NS41LDEzOS43YzEuNS0xLjUsMy40LTIuMiw1LjUtMi4yczQsMC44LDUuNSwyLjNjMS41LDEuNCwyLjMsMy40LDIuMyw1LjVzLTAuOCw0LTIuMyw1LjQgICAgIGMtMS41LDEuNS0zLjQsMi4zLTUuNSwyLjNjLTIuMSwwLTQtMC44LTUuNS0yLjNjLTEuNS0xLjUtMi4zLTMuNC0yLjMtNS41QzE5My4yLDE0My4xLDE5NCwxNDEuMiwxOTUuNSwxMzkuN3ogTTIwMSwxNTAuNiAgICAgYzIuOCwwLDUuMS0yLjMsNS4xLTUuNHMtMi4zLTUuNC01LjEtNS40Yy0yLjksMC01LjIsMi4zLTUuMiw1LjRTMTk4LjEsMTUwLjYsMjAxLDE1MC42eiI+PC9wYXRoPgoJCTwvZz4KCTwvZz4KPC9nPgo8L3N2Zz4K"
+        width="352" 
+        height="156" 
+        alt="logo"
+    >
+				</a>
+			
+			<!-- Toggler -->
+			<button class="navbar__toggler" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<svg viewbox="0 0 72 26" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 3h62c13 0 6 28-4 18L35 0"/>
+					<path d="M0 13h70"/>
+					<path d="M0 23h62c13 0 6-28-4-18L35 25"/>
+				</svg>
+			</button>
+			
+			<div class="navbar__nav">
+
+				<div class="navbar__nav-inner">
+					<!-- Primary Navigation -->
+					<ul id="primary-navigation" class="navbar__menu" role="menubar">
+
+						<!-- Menu Items -->
+																					<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/" class="navbar__link" role="menuitem">
+										Home
+									</a>
+								</li>
+															<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/floorplans/" class="navbar__link" role="menuitem">
+										Floor Plans
+									</a>
+								</li>
+															<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/amenities/" class="navbar__link" role="menuitem">
+										Amenities
+									</a>
+								</li>
+															<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/photo-gallery/" class="navbar__link" role="menuitem">
+										Gallery
+									</a>
+								</li>
+															<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/schedule-a-tour/" class="navbar__link" role="menuitem">
+										Tour
+									</a>
+								</li>
+															<li class="navbar__item" role="none">
+									<a href="https://www.the9rio.com/contact/" class="navbar__link" role="menuitem">
+										Contact Us
+									</a>
+								</li>
+													
+						<!-- Additional Links -->
+																													<li class="navbar__item scroll-only" role="none">
+									<a
+										class="btn navbar__btn navbar__btn--secondary" 
+										href="https://www.the9rio.com/early-access/" 
+										role="menuitem" 
+																			>
+										Early Access
+									</a>
+								</li>
+													
+						<!-- Apply (scroll only) -->
+													<li class="navbar__item scroll-only" role="none">
+								<a 
+									class="btn navbar__btn" 
+									href="https://entrata.the9rio.com/Apartments/module/application_authentication/" 
+									role="menuitem" 
+																			target="_blank" 
+										rel="nofollow noreferrer"
+																	>
+									Apply
+								</a>
+							</li>
+						
+					</ul>
+
+					<!-- Utility Navigation -->
+					<ul class="navbar__utils docked-only-lg">
+
+						
+							<!--Telephone -->
+															<li class="navbar__item navbar__utils-item utils-tel">
+									<a href="tel:8443843953" class="navbar__link navbar__utils-link" rel="nofollow noopener">
+										(844) 384-3953
+									</a>
+								</li>
+							
+						
+						<!-- Resources -->
+													<li class="navbar__item navbar__utils-item">
+								<a class="navbar__link navbar__utils-link" href="/resources/">
+									<svg class="navbar__utils-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+									
+									Resources
+								</a>
+							</li>
+						
+						<!-- Additional Links -->
+						
+						<!-- Residents -->
+													<li class="navbar__item navbar__utils-item">
+								<a class="navbar__link navbar__utils-link" href="https://nineatrio.residentportal.com/resident_portal/?module=authentication&action=view_login" target="_blank" rel="nofollow noopener">
+									<svg class="navbar__utils-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>
+									Residents
+								</a>
+							</li>
+						
+						<!-- Additional Links -->
+																													<li class="navbar__item navbar__utils-item utils-apply">
+									<a
+										class="btn navbar__btn navbar__btn--secondary" 
+										href="https://www.the9rio.com/early-access/" 
+																			>
+										Early Access
+									</a>
+								</li>
+													
+						<!-- Apply -->
+													<li class="navbar__item navbar__utils-item utils-apply">
+								<a 
+									class="btn navbar__btn btn-bg" 
+									href="https://entrata.the9rio.com/Apartments/module/application_authentication/" 
+																			target="_blank" 
+										rel="nofollow noreferrer"
+																	>
+									Apply
+								</a>
+							</li>
+						
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</nav>
+
+	
+							<header class="hero">
+	<div class="hero__bg">
+
+                                
+
+
+        
+    <img 
+        class="img-fluid hero__bg-image"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-hero.jpg"
+        width="1600" 
+        height="900" 
+        alt="building exterior"
+        fetchpriority="high"
+    >
+        
+                
+                <div class="hero__scroll-hint">
+                        <img class="img-fluid" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEzNy42IDEzNy42IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzcuNiAxMzcuNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MCB7IGZpbGw6ICNGRkZGRkY7IH0KCS5zY3JvbGwtaGludC1yb3RhdGUgeyB0cmFuc2Zvcm0tb3JpZ2luOiBjZW50ZXI7IGFuaW1hdGlvbjogcm90YXRpb24gMTZzIGluZmluaXRlIGxpbmVhcjsgfQoJLnNjcm9sbC1oaW50LXJvdGF0ZSBwYXRoIHsgZmlsbDogI0ZGRkZGRjsgfQoJLnNjcm9sbC1oaW50LWJvYiB7IHRyYW5zZm9ybS1vcmlnaW46IGNlbnRlcjsgYW5pbWF0aW9uOiBib2IgM3MgaW5maW5pdGUgbGluZWFyOyB9CglAa2V5ZnJhbWVzIHJvdGF0aW9uIHsKCQlmcm9tIHsgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IH0KCQl0byB7IHRyYW5zZm9ybTogcm90YXRlKDM1OWRlZyk7IH0KCX0KCUBrZXlmcmFtZXMgYm9iIHsKCQkwJSwgMTAwJSB7IG9wYWNpdHk6IC44OyB9CgkJNTAlIHsgb3BhY2l0eTogMTsgfQoJfQoJQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uKSB7CgkJLnNjcm9sbC1oaW50LXJvdGF0ZSB7IGFuaW1hdGlvbjogbm9uZTsgfQoJCS5zY3JvbGwtaGludC1ib2IgeyBhbmltYXRpb246IG5vbmU7IH0KCX0KPC9zdHlsZT4KPGcgY2xhc3M9InNjcm9sbC1oaW50LXJvdGF0ZSI+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjUuNCwxMTkuOGwtMi40LTIuM2MtMi4xLTItMi4xLTQuOC0wLjQtNi42bDAsMGMxLjgtMS44LDQuNi0xLjksNi42LDAuMWwyLjQsMi4zTDI1LjQsMTE5Ljh6IE0yNS4yLDExNy42IGw0LjMtNC41bC0xLjMtMS4yYy0xLjQtMS4zLTMuMi0xLjMtNC40LDBsMCwwYy0xLjIsMS4zLTEuMiwzLjEsMC4xLDQuNEwyNS4yLDExNy42eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyLjgsMTA1LjNsLTAuOS0xLjNsNy43LTQuOWwwLjksMS4zTDEyLjgsMTA1LjN6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTQuMyw5MS45bC0xLjQtMC41YzAuNC0xLjEsMC41LTIsMC4yLTMuMWMtMC4zLTAuOS0xLTEuNC0xLjYtMS4xbDAsMGMtMC42LDAuMi0wLjgsMC43LTAuNiwyLjQgYzAuMiwyLDAsMy4yLTEuNSwzLjhsMCwwYy0xLjUsMC41LTIuOS0wLjMtMy41LTJjLTAuNC0xLjItMC40LTIuNCwwLTMuNWwxLjQsMC40Yy0wLjMsMS0wLjMsMS45LTAuMSwyLjZjMC4zLDAuOSwwLjksMS4yLDEuNSwxIGwwLDBjMC43LTAuMiwwLjgtMC43LDAuNi0yLjVjLTAuMi0yLDAuMS0zLjEsMS41LTMuNmwwLDBjMS42LTAuNiwzLDAuNCwzLjYsMi4yQzE0LjksODkuMiwxNC44LDkwLjYsMTQuMyw5MS45eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTYuOSw3Ny4yTDYuOSw3Ny4yYy0yLjYsMC4yLTQuOS0xLjYtNS00LjNjLTAuMS0xLjcsMC40LTIuNywxLjItMy43bDEuMywwLjljLTAuNiwwLjgtMSwxLjYtMC45LDIuNiBjMC4xLDEuNywxLjYsMi45LDMuNCwyLjhsMCwwYzEuOC0wLjEsMy4xLTEuNSwzLTMuMmMtMC4xLTEuMS0wLjYtMS44LTEuMy0yLjVsMS0xLjFjMS4xLDAuOSwxLjcsMS45LDEuOSwzLjYgQzExLjUsNzQuOSw5LjUsNzcsNi45LDc3LjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNi45LDU5LjlMNi45LDU5LjljLTIuNS0wLjYtNC4yLTMtMy42LTUuN0M0LDUxLjUsNi41LDUwLDksNTAuNmwwLDBjMi41LDAuNiw0LjIsMi45LDMuNiw1LjcgUzkuNSw2MC41LDYuOSw1OS45eiBNOC42LDUyLjJMOC42LDUyLjJjLTEuOC0wLjQtMy41LDAuNi0zLjgsMi4zczAuNywzLjMsMi41LDMuN2wwLDBjMS43LDAuNCwzLjQtMC42LDMuOC0yLjMgQzExLjUsNTQuMiwxMC40LDUyLjYsOC42LDUyLjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOC4xLDQwLjRsMC45LTEuNWw3LjUsMWwtNC44LTUuOGwwLjgtMS41bDYuMiw3LjdsLTAuNywxLjNMOC4xLDQwLjR6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTksMjRsNC43LTQuOGwxLDFsLTMuNiwzLjdsMS43LDEuN2wzLjItMy4ybDEsMWwtMy4yLDMuMmwxLjcsMS43bDMuNy0zLjdsMSwxbC00LjgsNC44TDE5LDI0eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTMyLjYsMTIuNWwzLjUtMmMxLTAuNiwxLjktMC43LDIuNy0wLjVjMC43LDAuMiwxLjIsMC42LDEuNiwxLjNsMCwwYzAuNywxLjMsMC40LDIuNS0wLjUsMy41bDMuOCwxLjggbC0xLjYsMC45bC0zLjUtMS42bC0xLjcsMWwxLjYsMi44bC0xLjQsMC44TDMyLjYsMTIuNXogTTM4LjIsMTQuNGMxLTAuNiwxLjMtMS40LDAuOS0yLjJsMCwwYy0wLjUtMC44LTEuNC0xLTIuNC0wLjRsLTIsMS4yIGwxLjUsMi42TDM4LjIsMTQuNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02My45LDMuNkw2MSwzLjdsLTAuMS0xLjVsNy40LTAuNWwwLjEsMS41bC0yLjksMC4ybDAuNSw3LjZsLTEuNiwwLjFMNjMuOSwzLjZ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNzkuMSwyLjZsMS42LDAuM2wtMC44LDMuN2w0LjIsMC45bDAuOC0zLjdsMS42LDAuM2wtMS45LDguOUw4MywxMi43TDgzLjgsOWwtNC4yLTAuOWwtMC44LDMuN2wtMS42LTAuMyBMNzkuMSwyLjZ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTcuMyw4LjJsNiwzLjJsLTAuNywxLjNMOTgsMTAuMmwtMS4xLDIuMWw0LDIuMWwtMC43LDEuM2wtNC0yLjFsLTEuMSwyLjFsNC42LDIuNEw5OSwxOS40bC02LTMuMkw5Ny4zLDguMnoiIC8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTIxLDI2LjhsMiwyLjhjMS43LDIuMywxLjIsNS4xLTAuOSw2LjZsMCwwYy0yLjEsMS41LTQuOSwxLTYuNS0xLjNsLTItMi44TDEyMSwyNi44eiBNMTIwLjgsMjguOWwtNSwzLjYgbDEsMS41YzEuMSwxLjYsMi45LDEuOCw0LjMsMC44bDAsMGMxLjUtMSwxLjgtMi44LDAuNy00LjRMMTIwLjgsMjguOXoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzAuNyw0My4zbDAuNiwxLjVsLTguNSwzLjRsLTAuNi0xLjVMMTMwLjcsNDMuM3oiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzQuNSw1NS42bDEsNi43bC0xLjQsMC4ybC0wLjgtNS4xbC0yLjUsMC40bDAuNyw0LjVsLTEuNCwwLjJsLTAuNy00LjVsLTMuNywwLjZsLTAuMi0xLjZMMTM0LjUsNTUuNnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMzUuNiw3My4ybC0wLjcsNi43bC0xLjQtMC4ybDAuNi01LjFsLTIuNS0wLjNsLTAuNSw0LjZsLTEuNC0wLjJsMC41LTQuNmwtMy43LTAuNGwwLjItMS42TDEzNS42LDczLjJ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMyLjIsOTAuNGwtMi41LDYuM2wtMS4zLTAuNWwxLjktNC44bC0yLjItMC45bC0xLjcsNC4ybC0xLjMtMC41bDEuNy00LjJsLTIuMy0wLjlsLTEuOSw0LjhsLTEuMy0wLjUgbDIuNS02LjNMMTMyLjIsOTAuNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjQuMiwxMDYuNGwtMi41LDMuMmMtMC43LDAuOS0xLjUsMS40LTIuMywxLjVjLTAuNywwLjEtMS40LTAuMS0yLTAuNmwwLDBjLTEuMi0wLjktMS40LTIuMi0wLjktMy40IGwtNC4yLTAuMWwxLjEtMS41bDMuOSwwLjFsMS4yLTEuNmwtMi41LTEuOWwxLTEuM0wxMjQuMiwxMDYuNHogTTExOC4yLDEwNi44Yy0wLjcsMC45LTAuNywxLjksMC4xLDIuNGwwLDAgYzAuOCwwLjYsMS42LDAuNCwyLjMtMC42bDEuNC0xLjlsLTIuNC0xLjhMMTE4LjIsMTA2Ljh6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTExLjgsMTIwLjFsLTUuNCw0LjFsLTAuOS0xLjFsNC4xLTMuMWwtMS40LTEuOWwtMy42LDIuOGwtMC45LTEuMWwzLjYtMi44bC0xLjUtMS45bC00LjEsMy4ybC0wLjktMS4xIGw1LjQtNC4xTDExMS44LDEyMC4xeiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTk2LjcsMTI5LjdsLTEuNCwwLjVsLTYuOC00LjFsMi4zLDUuOWwtMS41LDAuNmwtMy4zLTguNWwxLjItMC41bDcsNC4ybC0yLjMtNmwxLjUtMC42TDk2LjcsMTI5Ljd6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNzgsMTMwLjVMNzgsMTMwLjVjMC4yLDIuNi0xLjUsNC45LTQuMyw1LjFjLTEuNywwLjEtMi43LTAuNC0zLjctMS4xbDAuOS0xLjNjMC44LDAuNiwxLjYsMSwyLjYsMC45IGMxLjctMC4xLDIuOS0xLjcsMi43LTMuNGwwLDBjLTAuMS0xLjgtMS41LTMuMS0zLjMtM2MtMS4xLDAuMS0xLjgsMC42LTIuNSwxLjRsLTEuMS0xYzAuOS0xLjEsMS45LTEuOCwzLjUtMS45IEM3NS42LDEyNiw3Ny43LDEyNy45LDc4LDEzMC41eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTU5LjIsMTM1bC02LjYtMS4zbDAuMy0xLjRsNS4xLDFsMC40LTIuM2wtNC41LTAuOWwwLjMtMS40bDQuNSwwLjlsMC41LTIuNGwtNS4xLTFsMC4zLTEuNGw2LjcsMS4zTDU5LjIsMTM1eiAiLz4KPC9nPgo8cGF0aCBjbGFzcz0ic3QwIHNjcm9sbC1oaW50LWJvYiIgZD0iTTkwLjIsNjMuOEw3MC45LDgzLjFWNDEuMmgtMy43VjgzTDQ3LjksNjMuOGwtMi42LDIuNmwyMi40LDIyLjRjMC40LDAuNCwwLjgsMC41LDEuMywwLjVzMS0wLjEsMS4zLTAuNSBsMjIuNC0yMi40TDkwLjIsNjMuOHoiLz4KPC9zdmc+Cg==" width="142" height="140" alt="Explore The The Nine at Rio">
+            <span class="sr-only">Jump to main content</span>
         </div>
-        <div class="project">
-            <img src="assets/project2.jpg" alt="Project Thumbnail">
-            <h3>Adi H7270 Channel</h3>
-            <p>Innovative and creative montages for Fortnite and more.</p>
-            <a href="https://www.youtube.com/@adih7270/videos" target="_blank">View Project</a>
+
+	</div>
+</header>
+
+	
+
+				<main id="main" class="layout-default container">
+														<div 
+    class="home-section-1 section section-container animation-group" 
+        >
+
+    <div class="home-section-1__left">
+        <div class="home-section-1__content">
+            <div class="home-section-1__title">
+                <span class="home-section-1__title--line-1 fade-up">Live On Rio </span>
+                <h1 class="home-section-1__title--line-2 fade-up">Student Apartments Near UT Austin</h1>
+            </div>
+            <div class="fade-up">
+                <p>Introducing one of the newest luxurious student housing communities in West Campus, period. At The Nine at Rio, we are the best of the best when it comes to amenities, floorplans, and on-site staff. Our <strong>apartments for rent in Austin, TX</strong>, are only 1,000 feet from UT Austin&#8217;s campus, perfect for students&#8217; busy lifestyles. Located right at the corner of 21st and Rio Grande St., The Nine at Rio’s convenient location, combined with its modern amenities and 28 different floorplans to choose from, puts our <strong>Austin apartments</strong> above all others.</p>
+
+            </div>
+                            <a  href="https://staging.landmarktheme.jumpem.host/schedule-a-tour/" class="home-section-1__btn btn btn-primary fade-up">
+                    Schedule A Tour Today
+                </a>
+                    </div>
+        <div class="home-section-1__left-square"></div>
+    </div>
+    <div class="home-section-1__right">
+        <div class="panorama">
+            
+
+
+    <img
+        class="blur lazyload img-fluid panorama__image-1"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-1-40x79.png"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-1.png"
+        width="240"
+        height="475"
+        alt="pool area"
+        fetchpriority="low"
+    />
+            
+
+
+    <img
+        class="blur lazyload img-fluid panorama__image-2"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-2-40x79.png"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-2.png"
+        width="240"
+        height="475"
+        alt="pool area"
+        fetchpriority="low"
+    />
+            
+
+
+    <img
+        class="blur lazyload img-fluid panorama__image-3"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-3-40x79.png"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-slice-3.png"
+        width="240"
+        height="475"
+        alt="pool area"
+        fetchpriority="low"
+    />
         </div>
-    </section>
+    </div> 
+</div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Adi, a passionate video editor and storyteller. My journey began with a love for gaming and grew into a full-fledged career in editing and directing. Explore my work to see how I bring stories to life.</p>
-    </section>
+														<div class="home-section-2">
+    <span class="home-section-2__large">
+        Student Living
+    </span>
+    <span class="home-section-2__small">
+        Live Where You Want
+    </span>
+</div>
 
-    <!-- Contact Section -->
-    <footer id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:adihebbalae@example.com">adihebbalae@example.com</a></p>
-        <p>Follow me: 
-            <a href="https://www.linkedin.com/in/adihebbalae/" target="_blank">LinkedIn</a> | 
-            <a href="https://www.youtube.com/llamavfx" target="_blank">YouTube</a>
-        </p>
-    </footer>
+														
+
+<div class="home-section-3  section section-container animation-group">
+    <div class="home-section-3__left">
+        <div class="home-section-3__img-square"></div>
+        <div class="home-section-3__img">
+            
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-amenities-40x36.png"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-amenities.png"
+        width="630"
+        height="570"
+        alt="pool table and game room"
+        fetchpriority="low"
+    />
+        </div>
+            <div class="home-section-3__arrow-button">
+                            <a href="/amenities/" class="arrow-btn">
+                            See What To Expect
+                        <svg class="arrow-btn__arrow" width="1em" height="1em" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M16.01 11H5c-.55 0-1 .45-1 1s.45 1 1 1h11.01v1.79c0 .45.54.67.85.35l2.78-2.79c.19-.2.19-.51 0-.71l-2.78-2.79c-.31-.32-.85-.09-.85.35V11z" />
+    </svg>
+</a>                    </div>
+    </div>
+    <div class="home-section-3__right">
+        <h2>
+            <span class="layout-home__eyebrow fade-up">Premier </span>
+            <span class="layout-home__title fade-up">Amenities</span>
+        </h2>
+        <div class="home-section-3__content fade-up">
+            <p>No college experience is complete without our range of on-site resort-style amenities available to residents of The Nine at Rio! Live here and get unlimited access to our amenities designed to help you relax, achieve, experience, and enjoy!</p>
+
+        </div>
+                    <ul class="home-section-3__amenities fade-right">
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg class="theme-icon-book" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 54.9 43.4" style="enable-background:new 0 0 54.9 43.4;" xml:space="preserve">
+<style type="text/css">
+	.book0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.theme-icon-book .book0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.animate-inline-svg:hover .theme-icon-book .page-turn { animation: page-turn 2.5s ease-in forwards infinite; transform-origin: left center; }
+	.animate-inline-svg:hover .theme-icon-book .page-static { animation: page-static 2.5s ease-in forwards infinite; }
+	@keyframes page-turn { 0% { opacity: 1; transform: rotateY(0deg); } 50% { opacity: 0; transform: rotateY(180deg); } 75% { opacity: 0; transform: rotateY(0); } 100% { opacity: 1; transform: rotateY(0); } }
+	@keyframes page-static { 0% { opacity: 0; } 50% { opacity: 1; } 75% { opacity: 1; } 100% { opacity: 0; } }
+</style>
+<path class="book0" d="M1.4,6.6v33h21.2c0,0,1.1,2.5,2.4,2.5c0,0,0.1,0,0,0c0.3,0,4.7,0,4.9,0c0,0,0,0,0,0c1.3,0,2.4-2.5,2.4-2.5 h21.2v-33"/>
+<g>
+	<path class="book0" d="M27.4,38.6c-2.7-3.2-5.6-3.1-11.7-3.1h-10V1.2h10c6.1,0,9-0.2,11.7,3.1"/>
+	<line class="book0" x1="19.9" y1="7.2" x2="11.2" y2="7.2"/>
+	<line class="book0" x1="19.9" y1="12.8" x2="11.2" y2="12.8"/>
+	<line class="book0" x1="19.9" y1="18.5" x2="11.2" y2="18.5"/>
+	<line class="book0" x1="19.9" y1="24.1" x2="11.2" y2="24.1"/>
+	<line class="book0" x1="19.9" y1="29.7" x2="11.2" y2="29.7"/>
+</g>
+<g class="page-static">
+	<path class="book0" d="M39.1,1.2c-6.1,0-9-0.2-11.7,3.1v34.3c2.7-3.2,5.6-3.1,11.7-3.1h10V1.2H39.1z"/>
+	<line class="book0" x1="43.7" y1="7.2" x2="35" y2="7.2"/>
+	<line class="book0" x1="43.7" y1="12.8" x2="35" y2="12.8"/>
+	<line class="book0" x1="43.7" y1="18.5" x2="35" y2="18.5"/>
+	<line class="book0" x1="43.7" y1="24.1" x2="35" y2="24.1"/>
+	<line class="book0" x1="43.7" y1="29.7" x2="35" y2="29.7"/>
+</g>
+<g class="page-turn">
+	<path class="book0" d="M39.1,1.2c-6.1,0-9-0.2-11.7,3.1v34.3c2.7-3.2,5.6-3.1,11.7-3.1h10V1.2H39.1z"/>
+	<line class="book0" x1="43.7" y1="7.2" x2="35" y2="7.2"/>
+	<line class="book0" x1="43.7" y1="12.8" x2="35" y2="12.8"/>
+	<line class="book0" x1="43.7" y1="18.5" x2="35" y2="18.5"/>
+	<line class="book0" x1="43.7" y1="24.1" x2="35" y2="24.1"/>
+	<line class="book0" x1="43.7" y1="29.7" x2="35" y2="29.7"/>
+</g>
+</svg>
+
+</div>                            <span>Private Study Rooms</span>
+                        </div>
+                    </li>
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg class="theme-icon-swimming" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 40.4" style="enable-background:new 0 0 56.7 40.4;" xml:space="preserve" width="39" height="36">
+	<style type="text/css">
+		.theme-icon-swimming .swim0 { fill: none; stroke: #000000; stroke-width: 2; stroke-linejoin: round; }
+		.theme-icon-swimming .swim1 { fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+		.animate-inline-svg:hover .theme-icon-swimming .wave-1,
+		.animate-inline-svg:hover .theme-icon-swimming .wave-2,
+		.animate-inline-svg:hover .theme-icon-swimming .wave-3,
+		.animate-inline-svg:focus .theme-icon-swimming .wave-1,
+		.animate-inline-svg:focus .theme-icon-swimming .wave-2,
+		.animate-inline-svg:focus .theme-icon-swimming .wave-3 { animation-name: themeIconAnimateWaves; animation-duration: 20000ms; animation-timing-function: ease; animation-fill-mode: both; animation-play-state: running; animation-iteration-count: infinite; }
+		@keyframes themeIconAnimateWaves { 0% { transform: translate(0px, 0px) rotate(0deg) scale(1, 1) } 5% { transform: translate(-2px, 2px) rotate(0deg) scale(1, 1) } 10% { transform: translate(-2px, -2px) rotate(0deg) scale(1, 1) } 15% { transform: translate(2px, 2px) rotate(0deg) scale(1, 1) } 20% { transform: translate(2px, -2px) rotate(0deg) scale(1, 1) } 25% { transform: translate(-2px, 2px) rotate(0deg) scale(1, 1) } 30% { transform: translate(-2px, -2px) rotate(0deg) scale(1, 1) } 35% { transform: translate(2px, 2px) rotate(0deg) scale(1, 1) } 40% { transform: translate(2px, -2px) rotate(0deg) scale(1, 1) } 45% { transform: translate(-2px, 2px) rotate(0deg) scale(1, 1) } 50% { transform: translate(-2px, -2px) rotate(0deg) scale(1, 1) } 55% { transform: translate(2px, 2px) rotate(0deg) scale(1, 1) } 60% { transform: translate(2px, -2px) rotate(0deg) scale(1, 1) } 65% { transform: translate(-2px, 2px) rotate(0deg) scale(1, 1) } 70% { transform: translate(-2px, -2px) rotate(0deg) scale(1, 1) } 75% { transform: translate(2px, 2px) rotate(0deg) scale(1, 1) } 80% { transform: translate(2px, -2px) rotate(0deg) scale(1, 1) } 85% { transform: translate(-2px, 2px) rotate(0deg) scale(1, 1) } 90% { transform: translate(-2px, -2px) rotate(0deg) scale(1, 1) } 95% { transform: translate(2px, 2px) rotate(0deg) scale(1, 1) } 100% { transform: translate(0, 0) rotate(0deg) scale(1, 1) } }
+	</style>
+	<g>
+		<circle class="swim0" cx="37.3" cy="7.2" r="6" />
+		<path class="swim1 wave-1" d="M55.3,27.2c-3.7,5.3-9.8,5.3-13.5,0c-3.7,5.3-9.8,5.3-13.5,0c-3.7,5.3-9.8,5.3-13.5,0c-3.7,5.3-9.8,5.3-13.5,0" />
+		<path class="swim1 wave-2" d="M49.3,35.2c-3.9,5.3-10.1,5.3-14,0c-3.9,5.3-10.1,5.3-14,0c-3.9,5.3-10.1,5.3-14,0" />
+		<path class="swim1" d="M45.3,25.2l9.1-9.1c1-1,1.2-2.6,0.4-3.7c-1-1.5-3.1-1.6-4.3-0.4l-8.1,8.1c-0.6,0.6-1.6,0.8-2.4,0.3L19.3,9.3 c-2.3-1.3-5.2-0.8-7.1,1l-7.9,7.9c-1.1,1.1-1.2,2.9-0.2,4c1.1,1.2,3,1.3,4.1,0.1l6.1-6c0.7-0.7,1.7-0.8,2.5-0.3l4.6,3.1l-4,4" />
+	</g>
+</svg>
+</div>                            <span>Resort-Style Pool</span>
+                        </div>
+                    </li>
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg class="theme-icon-gamepad" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.3 40.3" style="enable-background:new 0 0 56.3 40.3;" xml:space="preserve" width="39" height="28"> 
+	<style type="text/css">
+		.theme-icon-gamepad .gamepad0{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;}
+		.theme-icon-gamepad .gamepad1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+		.animate-inline-svg:focus .theme-icon-gamepad,
+		.animate-inline-svg:hover .theme-icon-gamepad { animation: tada 1.5s infinite; }
+		@keyframes tada { from { transform: scale3d(1, 1, 1); } 10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); } 30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); } 40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); } to { transform: scale3d(1, 1, 1); } }
+	</style>
+	<g>
+		<path class="gamepad0" d="M16.1,1.1C9.4,1.1,3.9,6.2,3.2,12.7l-2,18.7c0,0.3,0,0.5,0,0.8c0,3.9,3.1,7,7,7c2.1,0,3.9-0.9,5.2-2.3l6.9-7.8 c1.1-1.2,2.6-1.9,4.2-1.9h7.4c1.6,0,3.1,0.7,4.2,1.9l6.9,7.8c1.3,1.4,3.1,2.3,5.2,2.3c3.9,0,7-3.1,7-7c0-0.3,0-0.5,0-0.8l-2-18.7 C52.3,6.2,46.8,1.1,40.1,1.1H16.1z"/>
+		<circle class="gamepad1" cx="45.1" cy="16.1" r="2"/>
+		<circle class="gamepad1" cx="40.1" cy="21.1" r="2"/>
+		<circle class="gamepad1" cx="35.1" cy="16.1" r="2"/>
+		<circle class="gamepad1" cx="40.1" cy="11.1" r="2"/>
+		<path class="gamepad1" d="M23.1,16.1c0-1.1-0.9-2-2-2h-3v-3c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2v3h-3c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2h3 v3c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-3h3C22.2,18.1,23.1,17.2,23.1,16.1z"/>
+	</g>
+</svg>
+
+</div>                            <span>Gaming Lounge</span>
+                        </div>
+                    </li>
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg class="theme-icon-weights" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61.2 40.8" style="enable-background:new 0 0 61.2 40.8;" xml:space="preserve" width="43" height="28">
+<style type="text/css">
+	.theme-icon-weights .weights0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.theme-icon-weights .weights1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;}
+	.animate-inline-svg:hover .theme-icon-weights,
+	.animate-inline-svg:focus .theme-icon-weights { animation: themeIconWeights 1.25s ease-in infinite; }
+	@keyframes themeIconWeights { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+</style>
+<g>
+	<path class="weights0" d="M17.6,19.4v1.2c0,1.2,0.4,2.3,1,3.3l3.6,5.5c0.9,1.3,1.3,2.9,1.3,4.4v5.6"/>
+	<path class="weights1" d="M21.6,9.4h-1c-1.7,0-3,1.3-3,3v1"/>
+	<path class="weights0" d="M13.6,19.4h6c1.1,0,2-0.9,2-2V8.5c0-1.6,1.2-3,2.7-3.1c1.2-0.1,2.2,0.5,2.8,1.3c0.5-0.8,1.5-1.3,2.5-1.3
+		c1.6,0,2.9,1.2,3,2.8c0.5-0.5,1.2-0.8,2-0.8c1.4,0,2.5,0.9,2.9,2.2c0.5-0.2,1-0.3,1.6-0.2c1.5,0.2,2.5,1.6,2.5,3.1v10.1
+		c0,1.1-0.2,2.2-0.5,3.3L40,30c-0.3,0.9-0.4,1.8-0.4,2.7v6.6"/>
+	<line class="weights1" x1="21.6" y1="13.4" x2="13.6" y2="13.4"/>
+	<line class="weights1" x1="47.6" y1="19.4" x2="41.6" y2="19.4"/>
+	<line class="weights1" x1="41.6" y1="13.4" x2="47.6" y2="13.4"/>
+	<path class="weights1" d="M11.6,31.4h-2c-1.1,0-2-0.9-2-2v-26c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2v26C13.6,30.5,12.7,31.4,11.6,31.4z"/>
+	<path class="weights1" d="M7.6,29.4h-4c-1.1,0-2-0.9-2-2v-22c0-1.1,0.9-2,2-2h4"/>
+	<path class="weights1" d="M49.6,31.4h2c1.1,0,2-0.9,2-2v-26c0-1.1-0.9-2-2-2h-2c-1.1,0-2,0.9-2,2v26C47.6,30.5,48.5,31.4,49.6,31.4z"/>
+	<path class="weights1" d="M53.6,29.4h4c1.1,0,2-0.9,2-2v-22c0-1.1-0.9-2-2-2h-4"/>
+</g>
+</svg>
+
+</div>                            <span>Fitness Center</span>
+                        </div>
+                    </li>
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg class="theme-icon-umbrella" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51.2 47.1" style="enable-background:new 0 0 51.2 47.1;" xml:space="preserve">
+	<style type="text/css">
+		.umbrella0 {
+			fill: none;
+			stroke: #000000;
+			stroke-width: 2;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		}
+		/* Umbrella wiggle animation */
+		.animate-inline-svg:focus .theme-icon-umbrella .umbrella,
+		.animate-inline-svg:hover .theme-icon-umbrella .umbrella {
+			animation: umbrella-wiggle 2s infinite;
+			transform-origin: center;
+		}
+		@keyframes umbrella-wiggle {
+			0% { transform: rotate(0deg); }
+			50% { transform: rotate(-5deg); }
+			100% { transform: rotate(0deg); }
+		}
+	</style>
+	<g>
+		<g class="umbrella">
+			<path class="umbrella0" d="M49.8,23.5c0-8.1-6.9-15.6-16.6-17.4c-9.7-1.8-18.9,2.8-21.7,10.4" />
+			<path class="umbrella0" d="M38.7,21.9c0,0,4.8-2.9,11.1,1.5" />
+			<path class="umbrella0" d="M23,19c0,0-3.7-4.6-11.5-2.4" />
+			<path class="umbrella0" d="M23,19c0,0,9.2-3.1,15.7,2.9" />
+			<path class="umbrella0" d="M33.6,6.2c0,0,6.5,3.2,5.1,15.6" />
+			<path class="umbrella0" d="M33.5,6.2c0,0-7.5,0.5-10.5,12.6" />
+			<line class="umbrella0" x1="34.1" y1="1.9" x2="34.2" y2="1.2" />
+			<line class="umbrella0" x1="33.8" y1="3.2" x2="34.2" y2="1.2" />
+			<line class="umbrella0" x1="27.1" y1="42.5" x2="26.5" y2="45.9" />
+			<line class="umbrella0" x1="26.8" y1="43.9" x2="26.5" y2="45.9" />
+			<line class="umbrella0" x1="31" y1="21.6" x2="28.2" y2="36.4" />
+		</g>
+		<polyline class="umbrella0 " points="1.4,24 8.9,39.4 43.4,39.4" />
+		<line class="umbrella0 " x1="21.3" y1="33.3" x2="5.9" y2="33.3" />
+		<line class="umbrella0" x1="40.3" y1="45.9" x2="36.4" y2="39.4" />
+		<line class="umbrella0" x1="19.4" y1="39.3" x2="15.8" y2="33.3" />
+		<line class="umbrella0" x1="5.7" y1="45.9" x2="9.6" y2="39.4" />
+	</g>
+</svg>
+</div>                            <span>Outdoor Lounge</span>
+                        </div>
+                    </li>
+                                    <li class="home-section-3__amenity home-section-3__icon">
+                        <div class="home-section-3__link animate-inline-svg" href="https://www.the9rio.com/amenities/">
+                            <div class="svg-inline">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46.9 43.8" style="enable-background:new 0 0 46.9 43.8;" xml:space="preserve">
+<style type="text/css">
+	.dog0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.animate-inline-svg:focus .dog0--tail,
+	.animate-inline-svg:hover .dog0--tail {
+		animation-name: tailWag;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		transform-origin: bottom right;
+	}
+	@keyframes tailWag {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(-1.5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+</style>
+<g>
+	<path class="dog0 dog0--tail" d="M1.7,10.3c0,0-1.6,4.4,2,8.4"/>
+	<path class="dog0" d="M31.2,7.8c0,0,4.2,9-1.1,11.5c0,0-7.7,1.9-2.3-9.3l0.1-0.2c1.4-2.5,5-2,5-2c4.8,0.2,6.2,2.6,6.2,2.6l6.5,0.5
+		c-1.2,6-0.9,6.4-2.7,7.4c-1.7,1-7.2,1.9-7.2,1.9s-1,5.5-1.8,6.9c-1.5,2.4-4.7,4.4-4.7,4.4l0.3,9.3c-0.1,2.4-1.5,1.9-1.5,1.9
+		c-1.5,0-1.8-0.4-1.8-0.4l-1.9-9.7c-3.6,2.6-8,1.5-10.2-0.3c-1.7-1.4-5.4-1.9-5.4-1.9L6.1,40.3c-0.5,2-1.4,1.9-1.4,1.9
+		c-1.7,0-2.2-0.9-2.2-0.9V23.5c0-5,1.6-5,1.6-5c6.3,1.7,15.2,0.9,19.2,0.3"/>
+	<line class="dog0" x1="22.9" y1="12.2" x2="14.8" y2="1.2"/>
+	<path class="dog0" d="M34.8,22.8c0,0-2.6-0.9-4.3-3.5"/>
+</g>
+</svg>
+
+</div>                            <span>Pet Friendly</span>
+                        </div>
+                    </li>
+                            </ul>
+            </div>
+</div>
+
+														<div class="home-section-4 section animation-group">
+    <div class="home-section-4__content fade-left">
+        <h2>
+            <span class="layout-home__eyebrow">Spacious</span>
+            <span class="layout-home__title">Floor Plans</span>
+        </h2>
+        <div><p>The Nine at Rio offers fully furnished, spacious studio apartments, two-bedroom apartments, and three-bedroom <strong>apartments in Austin, TX</strong>, complete with everything you need to feel at home!</p>
+</div>
+    </div>
+    <div class="home-section-4__floorplans fade-right">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                        
+
+
+    <img
+        class="blur lazyload img-fluid home-section-4__floorplan-image"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/0027_s1-studio-40x32.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/0027_s1-studio.jpg"
+        width="740"
+        height="592"
+        alt="s1 studio floor plan"
+        fetchpriority="low"
+    />
+                                                  <p class="home-section-4__floorplan-title">Studio</p>
+                                            </div>
+                                    <div class="swiper-slide">
+                        
+
+
+    <img
+        class="blur lazyload img-fluid home-section-4__floorplan-image"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/0021_sweet-home-b2-40x32.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/0021_sweet-home-b2.jpg"
+        width="740"
+        height="592"
+        alt="sweet home b2 floor plan"
+        fetchpriority="low"
+    />
+                                                  <p class="home-section-4__floorplan-title">2 Bedroom</p>
+                                            </div>
+                                    <div class="swiper-slide">
+                        
+
+
+    <img
+        class="blur lazyload img-fluid home-section-4__floorplan-image"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/0019_texan-c1-40x32.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/0019_texan-c1.jpg"
+        width="740"
+        height="592"
+        alt="texan c1 floor plan"
+        fetchpriority="low"
+    />
+                                                  <p class="home-section-4__floorplan-title">3 Bedroom</p>
+                                            </div>
+                            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+            <a class="btn btn-primary fade-up" href="https://staging.landmarktheme.jumpem.host/floorplans/">
+            Choose Your Apartment
+        </a>
+    </div>
+
+														<div class="home-section-5 section animation-group">
+    <div class="home-section-5__square"></div>
+    <div class="home-section-5__image-1">
+        
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-community-5-40x83.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-community-5.jpg"
+        width="346"
+        height="716"
+        alt="front desk"
+        fetchpriority="low"
+    />
+    </div>
+    <div class="home-section-5__image-2">
+        
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-community-2-40x35.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-community-2.jpg"
+        width="580"
+        height="513"
+        alt="clubroom"
+        fetchpriority="low"
+    />
+    </div>
+    <div class="home-section-5__arrow-button">
+                    <a href="https://www.the9rio.com/photo-gallery/" class="arrow-btn">
+                        Discover The Nine
+                    <svg class="arrow-btn__arrow" width="1em" height="1em" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M16.01 11H5c-.55 0-1 .45-1 1s.45 1 1 1h11.01v1.79c0 .45.54.67.85.35l2.78-2.79c.19-.2.19-.51 0-.71l-2.78-2.79c-.31-.32-.85-.09-.85.35V11z" />
+    </svg>
+</a>            </div>
+    <div class="home-section-5__impact-text">
+        <div class="home-section-5__impact-text__inner">
+            Exclusive
+        </div>
+    </div>
+    <div class="home-section-5__content section-container">
+        <h2>
+            <span class="layout-home__eyebrow fade-up">A Social </span>
+            <span class="layout-home__title fade-up">Community</span>
+        </h2>
+        <div class="fade-up">
+            <p>We are the home of the Longhorns — at The Nine at Rio, students are at the heart of the Austin, TX, community. Our <strong>off campus apartments near UT Austin</strong> are steps away from all that the city has to offer, such as dining, shopping, and popular nightlife. Each apartment boasts first-class features from our unique and edgy interior design and spacious floorplans to custom finishes like granite countertops, stainless appliances, and 50-inch 4k Smart HD-TVs in every unit.</p>
+
+        </div>
+    </div>
+</div>
+
+														<div class="home-section-6">
+    <div class="home-section-6__left">
+                
+
+
+    <img 
+        class="img-fluid blur lazyload home-section-6__graphic"
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/quote.svg"
+        width="177" 
+        height="103" 
+        alt="Testimonials:"
+        fetchpriority="low"
+    >
+        <div class="home-section-6__quote">
+                                                            <div class="home-section-6__content home-section-6__content--active">
+                        The Nine is a great place to live at! They have a great management team and are always willing and happy to help with any questions you may have!
+                        <span class="home-section-6__author"> </span>
+                    </div>
+                                    </div>
+    </div>
+    <div class="home-section-6__right">
+        
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-quote-40x22.jpg"
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/index-quote.jpg"
+        width="843"
+        height="460"
+        alt="building entrance"
+        fetchpriority="low"
+    />
+    </div>
+</div>
+
+														<div class="home-section-7 section section-container animation-group">
+    <div class="home-section-7__left">
+        <h2>
+            <span class="layout-home__eyebrow fade-up">Convenient  </span>
+            <span class="layout-home__title fade-up">Location</span>
+        </h2>
+        <div class="fade-left">
+            <div class="home-section-7__content">
+                <p>The Nine at Rio is conveniently located <a title="Apartments Near UT Austin" href="https://www.the9rio.com/steps-from-everything/">steps from everything</a>, including the UT Austin campus and many local attractions and destinations for shopping, dining, entertainment, adventure, and more! <a href="https://www.the9rio.com/schedule-a-tour/" title="Tour Our Apartments Near UT Austin">Book a tour</a> and see our community for yourself!</p>
+
+            </div>
+            <ul class="location-groups">
+                                    <li>
+                        <button class="location-group location-group--active" data-place-id="ChIJt8-EJZu1RIYR3iFKF0_uMYE">
+                            <div class="location-group__icon">
+                                <div class="svg-inline">
+    <svg class="landmark-2023-pin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+</div>                            </div>
+                            <span class="location-group__label">The University of Texas at Austin</span>
+                            <span class="location-group__value">Car: 6 Minutes | Bike: 6 Minutes</span>
+                        </button>
+                    </li>
+                                    <li>
+                        <button class="location-group " data-place-id="ChIJk39b73m1RIYR8Tsvix5ODtM">
+                            <div class="location-group__icon">
+                                <div class="svg-inline">
+    <svg class="landmark-2023-pin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+</div>                            </div>
+                            <span class="location-group__label">UT Tower</span>
+                            <span class="location-group__value">Car: 5 Minutes | Bike: 3 Minutes</span>
+                        </button>
+                    </li>
+                                    <li>
+                        <button class="location-group " data-place-id="ChIJva0k12-1RIYRWWvusUoiw_4">
+                            <div class="location-group__icon">
+                                <div class="svg-inline">
+    <svg class="landmark-2023-pin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+</div>                            </div>
+                            <span class="location-group__label">Pease District Park</span>
+                            <span class="location-group__value">Car: 4 Minutes | Bike: 10 Minutes</span>
+                        </button>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="home-section-7__right">
+        <div class="home-section-7__gmap"></div>
+        <div class="home-section-7__arrow-button">
+                            <a href="https://staging.landmarktheme.jumpem.host/location/" class="arrow-btn">
+                            Explore The Neighborhood
+                        <svg class="arrow-btn__arrow" width="1em" height="1em" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M16.01 11H5c-.55 0-1 .45-1 1s.45 1 1 1h11.01v1.79c0 .45.54.67.85.35l2.78-2.79c.19-.2.19-.51 0-.71l-2.78-2.79c-.31-.32-.85-.09-.85.35V11z" />
+    </svg>
+</a>                    </div>
+        <div class="home-section-7__img-square"></div>
+    </div>
+</div>
+
+														<div class="home-section-8 section">
+    <div class="home-section-8__1">
+        
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2025/06/nine-rio-index-leasing-b-40x25.webp"
+        data-src="https://www.the9rio.com/wp-content/uploads/2025/06/nine-rio-index-leasing-b.webp"
+        width="823"
+        height="514"
+        alt="apartment bedroom"
+        fetchpriority="low"
+    />
+    </div>
+    <div class="home-section-8__2 animation-group">
+        <h2>
+            <span class="layout-home__eyebrow fade-up">Luxurious </span>
+            <span class="layout-home__title fade-up">Student Living</span>
+        </h2>
+        <div class="fade-up">
+            <p>The Nine at Rio embodies the “live better” mantra with even more amenities, such as a 24/7 fitness center, private study rooms with 60-inch touch-screen monitors, iMacs and printers exclusive to residents, and an open study area equipped with lounging booths at our <strong>student apartments in Austin, TX</strong>. As for the exterior, modern outdoor seating, side tables, and BBQ grills surround a luxury pool. Our residents also have access to an advanced golf simulator accompanied by a decked-out gaming lounge, perfect for friendly competition among friends.</p>
+
+        </div>
+    </div>
+    <div class="home-section-8__3 animation-group">
+        <h2>
+            <span class="layout-home__eyebrow fade-up">Austin Apartments </span>
+            <span class="layout-home__title fade-up">Now Leasing!</span>
+        </h2>
+        <div class="fade-up">
+            <div><p>Come see what makes our Austin apartments so special and discover your new home at The Nine at Rio! Schedule a property tour today!</p>
+</div>
+                            <a href="https://staging.landmarktheme.jumpem.host/schedule-a-tour/" class="btn btn-primary">
+                    Schedule A Tour Today
+                </a>
+                    </div>
+    </div>
+    <div class="home-section-8__4">
+        
+
+
+    <img
+        class="blur lazyload img-fluid "
+        src="https://www.the9rio.com/wp-content/uploads/2025/06/nine-rio-index-leaseing-a-40x25.webp"
+        data-src="https://www.the9rio.com/wp-content/uploads/2025/06/nine-rio-index-leaseing-a.webp"
+        width="823"
+        height="514"
+        alt="furnished living room"
+        fetchpriority="low"
+    />
+    </div>
+</div>
+
+					</main>
+
+
+		
+
+
+	<div class="footer-message test">
+		
+	</div>
+
+<footer class="footer ">
+
+
+	<div class="footer__inner container">
+
+		<div class="footer__background"></div>
+
+		<div class="footer__logo">
+			
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg"
+        width="352" 
+        height="156" 
+        alt="logo"
+        fetchpriority="low"
+    >
+		</div>
+
+		<div class="footer__info">
+			<div class="footer__info-container">
+
+															<div class="footer__info-block">
+							<span class="footer__footer-label">Office Hours</span>
+							<div class="footer__hours" role="presentation">
+								<div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Monday-Friday
+												</div>
+																						<div class="footer__footer-value">
+																									10:00 am - 6:00 pm
+																							</div>
+										</div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Saturday
+												</div>
+																						<div class="footer__footer-value">
+																									10:00 am - 5:00 pm
+																							</div>
+										</div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Sunday
+												</div>
+																						<div class="footer__footer-value">
+																									11:00 am - 4:00 pm
+																							</div>
+										</div>
+																	</div>
+							</div>
+						</div>
+					        
+				<div class="footer__info-block footer__info-block--address ">
+
+											<div class="footer__group">
+							<span class="footer__footer-label">Property Address</span>
+															<a href="https://goo.gl/maps/ztUrgQUpcBX72wNn6" class="footer__footer-value" target="_blank">
+									2100 Rio Grande,
+									Austin,
+									TX
+									78705
+								</a>
+							
+						</div>
+					
+					
+					
+				</div>
+
+									<div class="footer__info-block footer__info-block--call-text">
+													<span class="footer__footer-label">Give Us A Call/Text</span>
+							<span class="footer__footer-value">
+								<a class="footer__footer-link" href="tel:8443843953">
+									(844) 384-3953
+								</a>
+							</span>
+																	</div>
+				
+			</div>
+		</div>
+
+		<div class="footer__navigation">
+
+			<div class="footer__navigation__sns">
+				    <ul class="sns">
+                            <li class="sns__item">
+                <a class="sns__link" href="https://www.facebook.com/ninerio" title="View us on Facebook" target="_blank" rel="nofollow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+            </li>
+                                    <li class="sns__item">
+                <a class="sns__link" href="https://www.instagram.com/nineatrio/" title="View us on Instagram" target="_blank" rel="nofollow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+            </li>
+                                                                                                                                    <li class="sns__item">
+                <a class="btn btn-review btn-primary" href="https://www.the9rio.com/review/" title="Review us on Google" target="_blank" rel="nofollow">
+                    Review Us
+                </a>
+            </li>
+            </ul>
+
+			</div>
+
+			<div class="footer__navigation__nav">
+				<ul class="footer-nav">
+        <li class="footer-nav__item">
+        <a class="footer-nav__link" href="https://www.landmarkproperties.com/careers/" target="_blank" rel="nofollow">
+            Careers
+        </a>
+    </li>
+                <li class="footer-nav__item">
+            <a class="footer-nav__link" href="/accessibility-policy/">
+                Accessibility Policy
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/privacy-policy/" target="_blank" rel="nofollow">
+                Privacy Policy
+            </a>
+        </li>
+                            <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/terms-of-use/" target="_blank" rel="nofollow">
+                Terms of Use
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link termly-display-preferences" href="#" target="_blank" rel="nofollow">
+                Consent Preferences
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/privacy-policy/#choices-options" target="_blank" rel="nofollow">
+                About Ads
+            </a>
+        </li>
+                                <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/move-in/" target="_blank" rel="nofollow">
+                    Move In
+                </a>
+            </li>
+                    <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/move-out/" target="_blank" rel="nofollow">
+                    Move Out
+                </a>
+            </li>
+                    <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/wp-content/uploads/2025/04/Landmark-Venture-Texas-TREC-form-2025.pdf" target="_blank" rel="nofollow">
+                    Real Estate Commission Information About Brokerage Services & Consumer Protection Notice
+                </a>
+            </li>
+            </ul>
+
+				
+			</div>
+
+		</div>
+
+		<div class="footer__corporate">
+			
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/landmark-properties.png"
+        width="164" 
+        height="42" 
+        alt="Landmark Properties"
+        fetchpriority="low"
+    >
+							<div class="footer__navigation__message">
+					<p>Landmark Venture Management, LLC</p>
+
+				</div>
+					</div>
+
+		<div class="footer__copyright">
+    <div class="footer__copyright__content">
+        <span style="margin-right: 5px;">
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/equal-opportunity-housing.png"
+        width="40" 
+        height="42" 
+        alt="Equal Housing Opportunities"
+        fetchpriority="low"
+    >
+</span>
+        Copyright &copy;
+        2025
+        - Equal Housing Opportunities - All Rights Reserved
+    </div>
+    <div class="footer__copyright__jumpem">
+        <span>Powered By </span>
+        <a href="https://www.jumpem.com/" target="_blank" rel="nofollow" title="Jumpem Web Design & Internet Marketing">
+            
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/jumpem.svg"
+        width="66" 
+        height="14" 
+        alt="Jumpem Web Design & Internet Marketing"
+        fetchpriority="low"
+    >
+        </a>
+    </div>
+</div>
+
+
+	</div>
+
+</footer>
+
+
+		<div class="mobile-buttons">
+
+                <a href="tel:8443843953" title="Call Us" target="_blank" rel="nofollow noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"/></svg>
+            <span>Call</span>
+        </a>
+        
+        
+        
+                <a 
+        href="https://entrata.the9rio.com/Apartments/module/application_authentication/" 
+                    target="_blank" 
+            rel="nofollow noreferrer"
+                >
+            <span>Apply Now</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </a>
+        
+</div>
+
+
+		<script type="module">
+// Convert dd/mm/yyyy to (year, month, day)
+function formatDate(date) {
+    var parts = date.split('/');
+    return new Date(parts[2], parts[1] - 1, parts[0]);
+}
+// Swap the banners
+function swapBanner(banner,allSpecials,delay){
+    // Get Next Special
+    var nextSpecial = banner.nextElementSibling || allSpecials[0];
+    transitionAnimation(nextSpecial, banner, 'specials-banner__item--active',null,delay);
+    return nextSpecial;
+}
+
+// Get Specials
+const specialsNodes = document.querySelectorAll('.specials-banner__item');
+const specials = [];
+// Get Active Special
+let activeSpecial = document.querySelector('.specials-banner__item--active');
+
+// Remove the inactive specials from HTML and NodeList
+specialsNodes.forEach(function(special,idx) {
+    const startDate = special.getAttribute('data-start-date');
+    const endDate = special.getAttribute('data-end-date');
+    if(startDate || endDate) {
+        const now = new Date();
+        const start = startDate ? new Date(formatDate(startDate)) : now;
+        const end = endDate ? new Date(formatDate(endDate)) : now;
+        if(start > now || end < now) {
+            if(activeSpecial === special){
+                activeSpecial = swapBanner(special,specialsNodes,0);
+            }
+            // Remove special
+            special.remove();
+            return;
+        }
+    }
+    specials.push(special);
+    return;
+});
+
+// If there is an active special and more than one special
+if(activeSpecial && specials.length > 1) {
+    // Set interval to transition specials
+    const interval = setInterval(function() {
+        // If the body has no-scroll class, skip this interval
+        const noScroll = document.body.classList.contains('no-scroll');
+        if(noScroll) {
+            return;
+        }
+        activeSpecial = swapBanner(activeSpecial,specials);
+    }, 5000);
+}
+
+/**
+ * Countdowns
+ * */
+
+// Get All Countdowns
+const countdowns = document.querySelectorAll('.countdown')
+// If No Countdowns, Return
+if(countdowns.length) {
+    // For Each Countdown
+    countdowns.forEach(countdown => {
+        // Get Countdown Date from data-date and data-time Attributes
+        const countdownDate = new Date(countdown.dataset.date + ' ' + countdown.dataset.time).getTime()
+        // If Countdown Date is Invalid or Date is in the Past, Return
+        if(isNaN(countdownDate) | countdownDate < new Date().getTime()) return
+        // Get Format
+        const format = countdown.dataset.format
+        // Get format variables from string format
+        const formatVariables = format.split(',').map(variable => variable.trim());
+        // Update Countdown Every Second
+        setInterval(() => {
+            // Get Current Date
+            const now = new Date().getTime()
+            // Get Time Remaining (Date - Now)
+            const distance = countdownDate - now
+            // Calculate Months, Days, Hours, Minutes, Seconds
+            const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.437))
+            const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.437)) / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+            // Update Countdown HTML
+            countdown.innerHTML = `
+                ${formatVariables.includes('months') && months > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${months}</span>
+                        <span class="countdown-label">${months > 1 ? 'Months' : 'Month'}</span>${formatVariables.includes('days') && days > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('days') && days > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${days}</span>
+                        <span class="countdown-label">${days > 1 ? 'Days' : 'Day'}</span>${formatVariables.includes('hours') && hours > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('hours') && hours > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${hours}</span>
+                        <span class="countdown-label">${hours > 1 ? 'Hours' : 'Hour'}</span>${formatVariables.includes('minutes') && minutes > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('minutes') && minutes > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${minutes}</span>
+                        <span class="countdown-label">${minutes > 1 ? 'Minutes' : 'Minute'}</span>${formatVariables.includes('seconds') && seconds > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('seconds') && seconds > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${seconds}</span>
+                        <span class="countdown-label">${seconds > 1 ? 'Seconds' : 'Second'}</span>
+                    </span>
+                ` : ``}
+            `
+        }, 1000)
+    });
+}
+</script>
+
+<script>
+var navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", onScroll, {passive: true});
+function onScroll() { 
+	// Get the current scroll position
+	var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+	// Get the navbar height
+	var navbarHeight = navbar.offsetHeight;
+	// Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+	if (currentScrollPosition < 0) {
+		return;
+	}
+	// If the current scroll position is greater than the navbar height + 150px, add the scrolling class
+	var threshold = navbarHeight;
+	// Get mobile threshold
+	if (!window.matchMedia("(max-width: 767px)").matches) {
+		threshold = navbarHeight + 150;
+	}
+	if( document.documentElement.scrollTop > threshold) {
+		// Only apply if the navbar is not already scrolling
+		if (!navbar.classList.contains("navbar--scrolling")) {
+			navbar.classList.add("navbar--scrolling");
+		}
+	} else {
+		if (navbar.classList.contains("navbar--scrolling")) {
+			navbar.classList.remove("navbar--scrolling");
+		}
+	}
+}
+
+var navbarToggler = document.querySelector(".navbar__toggler");
+if(navbarToggler) {
+	navbarToggler.addEventListener("click", toggleNavbar);
+}
+
+function toggleNavbar() { 
+
+	// On desktop, we don't need to do anything
+	if (!window.matchMedia("(max-width: 991px)").matches) {
+		return;
+	}
+	
+	// If we're opening the navbar, set the height
+	if (!navbar.classList.contains("open")) {
+		setNavMenuHeight();
+	} else {
+		unsetNavMenuHeight();
+	}
+
+	// toggle open class
+	navbar.classList.toggle("open");
+
+	// toggle aria-expanded
+	var expanded = navbarToggler.getAttribute("aria-expanded");
+	if (expanded === "true") {
+		navbarToggler.setAttribute("aria-expanded", "false");
+	} else {
+		navbarToggler.setAttribute("aria-expanded", "true");
+	}
+
+	// toggle body class
+	document.body.classList.toggle("no-scroll");
+
+}
+
+// On resize, reset the height
+window.addEventListener("resize", onNavbarResize);
+function onNavbarResize() {
+	// If the navbar is open and we're on desktop, reset the height and remove the open class
+	if (navbar.classList.contains("open") && window.matchMedia("(min-width: 992px)").matches) {
+		unsetNavMenuHeight();
+		navbar.classList.remove("open")
+		document.body.classList.remove("no-scroll");
+		navbarToggler.setAttribute("aria-expanded", "false");
+	} 
+	// If the navbar is open and we're on mobile, reset the height
+	else if(navbar.classList.contains("open") && window.matchMedia("(max-width: 991px)").matches) {
+		setNavMenuHeight();
+	}
+}
+
+function setNavMenuHeight() {
+
+	// Get Device Height
+	var deviceHeight = window.innerHeight;
+
+	// Get Specials banner height
+	var specialsBanner = document.querySelector(".specials-banner");
+	var specialsBannerHeight = 0;
+	if (specialsBanner) {
+		specialsBannerHeight = specialsBanner.offsetHeight;
+	}
+
+	// Set the navbar__nav height
+	var navbarNav = document.querySelector(".navbar__nav");
+	navbarNav.style.height = deviceHeight - specialsBannerHeight + "px";
+
+}
+
+function unsetNavMenuHeight() {
+	var navbarNav = document.querySelector(".navbar__nav");
+	navbarNav.style.height = "auto";
+}
+</script>
+
+
+<script>
+var hero = document.querySelector(".hero");
+if (hero) {
+
+    // Image Load
+    var img = document.querySelector(".hero__bg-image");
+    img.addEventListener("load", function () {
+        document.body.classList.add("hero--loaded");
+    });
+    // if image is already loaded, add class
+    if (img.complete) {
+        document.body.classList.add("hero--loaded");
+    }
+
+    // Scroll To Main
+    var scrollHint = document.querySelector(".hero__scroll-hint");
+    scrollHint.addEventListener("click", function () {
+        var main = document.querySelector("#main");
+        var top = main.offsetTop - 84;
+        window.scrollTo({ top, behavior: "smooth" });
+    });
+
+    // Set screen height
+    document.documentElement.style.setProperty(
+        "--device-height",
+        `${window.innerHeight}px`
+    );
+
+    // Set device height
+    let prevWidth = window.innerWidth;
+    var deviceHeight = () => {
+        if (prevWidth !== window.innerWidth) {
+        document.documentElement.style.setProperty(
+            "--device-height",
+            `${window.innerHeight}px`
+        );
+        prevWidth = window.innerWidth;
+        }
+    };
+
+    window.addEventListener("resize", () => {
+        deviceHeight();
+    });
+}
+
+</script>
+
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+Promise.all([gsapLoaded]).then(function() {
+    if(window.matchMedia("(min-width: 992px)").matches) {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-1",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".panorama", { y: 150 }, { y: -75, ease: "power1.out" }, 0)
+        .fromTo(".panorama__image-1", { y: 100 }, { y: 0, ease: "power4.out", delay: 0.02 }, 0)
+        .fromTo(".panorama__image-2", { y: -100 }, { y: 0, ease: "power4.out", delay: 0.01 }, 0)
+        .fromTo(".panorama__image-3", { y: 100 }, { y: 0, ease: "power4.out", delay: 0.03 }, 0)
+        .fromTo(".home-section-1__left-square", { y: 75 }, { y: -75, ease: "linear" }, 0);
+    }
+});
+</script>
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+Promise.all([gsapLoaded]).then(function() {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: '.home-section-2',
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1,
+        },
+    })
+    .fromTo('.home-section-2 .home-section-2__large', { x: '35%' }, { x: '-15%' }, 0)
+    .fromTo('.home-section-2 .home-section-2__small', { x: '-15%' }, { x: '25%' }, 0)
+});
+</script>
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+Promise.all([gsapLoaded]).then(function() {
+    if(window.matchMedia("(min-width: 992px)").matches) {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-3",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".home-section-3__img-square", { y: 150 }, { y: -150, ease: "linear" }, 0)
+    }
+});
+</script>
+
+<script>
+var swiperJSLoaded = new Promise(function(resolve) {
+    document.addEventListener("swiper-js-loaded",resolve,false);
+})
+Promise.all([swiperJSLoaded]).then(function() {
+    new Swiper('.home-section-4 .swiper', {
+        // If there are more than 1 slide, loop the slides
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 15,
+        speed: 666,
+        breakpoints: {
+            992: {
+                // If there are more than 3 slides, loop the slides
+                loop: false,
+                // If there are more than 3 slides, show 3 slides, otherwise show the number of slides
+                slidesPerView: 3,
+                spaceBetween: 100
+            }
+        },
+        navigation: {
+            nextEl: '.home-section-4 .swiper-button-next',
+            prevEl: '.home-section-4 .swiper-button-prev',
+        }
+    });
+});
+</script>
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+Promise.all([gsapLoaded]).then(function() {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        // Section 5 Animation
+        gsap.registerPlugin(ScrollTrigger);
+        // Square Animation
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-5",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".home-section-5__square", { y: 100 }, { y: -50, ease: "linear" }, 0)
+
+        // Get Height of Impact Text
+        var impactTextHeight = document.querySelector(".home-section-5__impact-text__inner").offsetHeight;
+        var impactTextTrigger = impactTextHeight + 300;
+
+        // Impact Text Animation
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-5",
+                start: "top bottom-=" + impactTextTrigger,
+                end: "center center+=" + impactTextHeight,
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".home-section-5__impact-text__inner", { y: -(impactTextHeight/2) }, { y: 0, ease: "linear"}, 0)
+    }
+});
+</script>
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+
+Promise.all([gsapLoaded]).then(function() {
+
+    /**
+     * Animation for multiple quotes
+     * */
+
+    // Get Quote contents
+    var quotes = document.querySelectorAll('.home-section-6__content');
+
+    // Loop through each quote and get the max height, to set the height of the container
+    var maxHeight = 0;
+    quotes.forEach(function(quote) {
+        // Get height of display none div
+        quote.style.display = 'block';
+        var height = quote.offsetHeight;
+        // remove inline styles
+        quote.style.display = '';
+        // Set max height
+        if(height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    // Set the height of the container
+    document.querySelector('.home-section-6__quote').style.minHeight = maxHeight + 'px';
+
+    // Get Active Quote
+    var activeQuote = document.querySelector('.home-section-6__content--active');
+    // If there is an active quote and more than one quote
+    if(activeQuote && quotes.length > 1) {
+            // Set interval to transition quotes
+        var interval = setInterval(function() {
+            // Get Next Quote
+            var nextQuote = activeQuote.nextElementSibling || quotes[0];
+            transitionAnimation(nextQuote, activeQuote, 'home-section-6__content--active', function(){
+                // Set active Quote to next Quote
+                activeQuote = nextQuote;
+            });
+        }, 5000);
+    }
+
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-6",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".home-section-6__left", { y: 75 }, { y: -75, ease: "linear" }, 0)
+        .fromTo(".home-section-6__quote", { y: 5 }, { y: -50, ease: "power1.in" }, 0)
+    }
+});
+
+
+</script>
+
+
+
+
+<script>
+var gsapLoaded = new Promise(function(resolve) {
+    document.addEventListener("gsap-scrollTrigger-loaded",resolve,false);
+})
+var resized = false;
+function initMap() {
+if(window.GMaps) return;
+
+// Load the google maps script
+var script = document.createElement('script');
+script.src = 'https://www.the9rio.com/wp-content/themes/landmark-2023/assets/js/google-maps.js';
+script.async = true;
+script.onload = function(){
+
+    var localData = {"mapMarkers":{"all":[{"title":"The Nine at Rio","place_id":"ChIJ4XI-mLG1RIYRAQMdAplCMcU","icon":{"width":120,"height":53.18181818181817988033799338154494762420654296875,"image":"https:\/\/www.the9rio.com\/wp-content\/uploads\/2023\/11\/logo2.svg"}},{"title":"The University of Texas at Austin","place_id":"ChIJt8-EJZu1RIYR3iFKF0_uMYE"},{"title":"UT Tower","place_id":"ChIJk39b73m1RIYR8Tsvix5ODtM"},{"title":"Pease District Park","place_id":"ChIJva0k12-1RIYRWWvusUoiw_4"}]},"customStyles":[{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"color":"#cee9de"},{"saturation":"2"},{"weight":"0.80"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"weight":"1"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#f5d6d6"},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway.controlled_access","elementType":"labels.icon","stylers":[{"visibility":"off"},{"hue":"#0064ff"},{"gamma":"1.44"},{"lightness":"-3"},{"weight":"1.69"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"simplified"},{"weight":"0.31"},{"gamma":"1.43"},{"lightness":"-5"},{"saturation":"-22"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"hue":"#ff0000"}]},{"featureType":"transit.station.airport","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#ff0045"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#00d1ff"}]},{"featureType":"transit.station.bus","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.station.rail","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#00cbff"}]},{"featureType":"transit.station.rail","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"weight":"1.61"},{"color":"#cde2e5"},{"visibility":"on"}]}],"activeColor":"#b6674a","fillColor":"#007b99"};
+
+    var mapLinks = document.querySelectorAll('.location-group');
+
+    var googleMap = new JumpemGoogleMap({
+        el: document.querySelector('.home-section-7__gmap'),
+        custom_style: localData.customStyles,
+        markers: localData.mapMarkers,
+        fillColor: localData.fillColor,
+        activeColor: localData.activeColor,
+        key: "AIzaSyB59r8Sl8FRki86UyuedU8gH_gZSivLAGc",
+        activeEl: '.location-group'
+    });
+
+    mapLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var label = link.dataset.placeId;
+            googleMap.setActiveMarker(label);
+            mapLinks.forEach(function(link) {
+                link.classList.remove('location-group--active');
+            });
+            link.classList.add('location-group--active');
+        });
+    });
+
+}
+document.body.appendChild(script);
+}
+Promise.all([gsapLoaded]).then(function() {
+
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-7",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5,
+            },
+        })
+        .fromTo(".home-section-7__img-square", { y: 75 }, { y: -75, ease: "linear" }, 0)
+
+        // Add scrolltrigger for when we reach witin 1000px of the section
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".home-section-7",
+                start: "top-=1000 bottom",
+                end: "top+=1000 bottom",
+                onEnter: initMap,
+            }
+        })
+    } else {
+        // Add Aria Disabled true to all location groups
+        var mapLinks = document.querySelectorAll('.location-group');
+        mapLinks.forEach(function(link) {
+            link.setAttribute('aria-disabled', true);
+        });
+        // On Resize, if above 992px, init the map
+        window.addEventListener('resize', function() {
+            if (window.matchMedia("(min-width: 992px)").matches && !resized) {
+                initMap();
+                resized = true;
+            }
+        });
+    }
+
+});
+</script>
+
+
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/landmark-2023\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?ver=6.8.2" defer id="gsap" onload="document.dispatchEvent(new Event('gsap-loaded'));"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?ver=6.8.2" defer id="gsap-scrollTrigger" onload="document.dispatchEvent(new Event('gsap-scrollTrigger-loaded'));"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.8.2" defer id="swiper-js" onload="document.dispatchEvent(new Event('swiper-js-loaded'));"></script>
+
+				<script>
+
+var _userway_config = {
+    account: 'vZsX8kyRFY'
+};
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; 
+        s.async = true;
+        s.src = 'https://cdn.userway.org/widget.js';
+        document.head.appendChild(s);
+    }, 5000);
+});
+
+</script>	
+		
+
+				<script type="module">
+    import MEChat from 'https://cdn.skypack.dev/@meetelise/chat';
+    MEChat.start({
+      organization: "d073d964-1b0c-45d7-a6f1-ad1a8317048e"
+    });
+</script>
+	
+		<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+        "@type": ["ApartmentComplex"],
+        "logo": "https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg",
+    "image": [
+        "https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg"
+    ],
+    "name": "The Nine at Rio",
+    "description": "",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2100 Rio Grande",
+        "addressLocality": "Austin",
+        "addressRegion": "TX",
+        "postalCode": "78705",
+        "addressCountry": "US"
+    },    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.2842794",
+        "longitude": "-97.7475376"
+    },
+    "url": "https://www.the9rio.com",
+    "telephone": "(844) 384-3953",
+    "openingHoursSpecification": [            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "10:00",
+                "closes": "18:00"
+            }
+            ,            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+            ,            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday"],
+                "opens": "11:00",
+                "closes": "16:00"
+            }
+            ]
+}
+</script>
+
 </body>
+
 </html>
