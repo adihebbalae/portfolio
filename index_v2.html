@@ -69,7 +69,7 @@ body {
     font-weight: 400;
     line-height: 1.73;
     color: #000;
-    background: #faf0e6;
+    background: #ffffff;
     padding-bottom: 44px;
     margin: 0;
 }
@@ -382,23 +382,19 @@ html {
     --font-family-secondary: 'Oswald', sans-serif;
     --font-family-tertiary: 'Oswald', sans-serif;
     --font-family-quaternary: 'Oswald', sans-serif;
-
-    --color-primary: #880808; /* deep red */
-    --color-primary-transparent: #88080854; /* transparent red */
-    --color-primary-darker: #4a0a0a; /* darker version of primary */
-    
-    --color-secondary: #a4b8c4; /* light bluish-gray */
-    --color-tertiary: #2d2d2d; /* dark neutral gray */
-    --color-tertiary-transparent: #2d2d2d21; /* transparent version */
-    
-    --color-quaternary: #1c1f2a; /* dark blue-gray (backgrounds) */
-    --color-quinary: #7f449a; /* muted purple accent */
-    
+    --color-primary: #880808;
+    --color-primary-transparent: #88080854;
+    --color-primary-darker: #4a4a4a;
+    --color-secondary: #b6674a;
+    --color-tertiary: #2d2d2d;
+    --color-tertiary-transparent: #282d2d21;
+    --color-quaternary: #1c1f2a;
+    --color-quinary: #7f449a;
     font-family: var(--font-family-primary);
     font-weight: 400;
     line-height: 1.75;
     color: #000000;
-    background: #faf0e6;
+    background: #ffffff;
 }
 
 h1,
@@ -628,27 +624,8 @@ window.onload = function() {
 		<meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2" as="style" id="swiper-css" media="all" onload="this.onload=null;this.rel='stylesheet';document.dispatchEvent(new Event('swiper-css-loaded'));">
-<noscript><link rel='stylesheet' id='swiper-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2' type='text/css' media='all' /></noscript>
-
-<script src="./lazySizes.js" defer id="lazysizes"></script>
-<script>
-  document.getElementById('lazysizes').addEventListener('load', function() {
-    document.dispatchEvent(new Event('lazysizes-loaded'));
-  });
-</script>
-<!-- GSAP core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<!-- GSAP ScrollTrigger plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script>
-  // Register the plugin
-  gsap.registerPlugin(ScrollTrigger);
-  // Fire the custom event so the gsapLoaded promise resolves
-  document.dispatchEvent(new Event('gsap-scrollTrigger-loaded'));
-</script>
-
-<style>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2" as="style" id="swiper-css" media="all" onload="this.onload=null;this.rel='stylesheet';document.dispatchEvent(new Event('swiper-css-loaded'));"><noscript><link rel='stylesheet' id='swiper-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css?ver=6.8.2' type='text/css' media='all' />
+</noscript><script src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/js/lazySizes.js?ver=6.8.2" defer id="lazysizes" onload="document.dispatchEvent(new Event('lazysizes-loaded'));"></script><style>
 .specials-banner { color: #fff; background-color: var(--color-quaternary); overflow: hidden; }
 .specials-banner__item { display: none; align-items: center; justify-content: center; font-family: var(--font-family-secondary); font-size: 15px; color: #fff; background-color: var(--color-quaternary); border: 1px solid var(--color-quaternary); padding: 7.5px var(--padding); text-align: center; }
 .specials-banner__item--small { font-size: 12px; }
@@ -769,7 +746,7 @@ a.specials-banner__item:focus { background-color: #fff; color: var(--color-quate
 	.navbar--home.navbar.open { --navbar-color: var(--color-tertiary); }
 	.navbar.open { --navbar-color: var(--color-tertiary); }
 	.navbar__inner { position: relative; }
-	.navbar.open .navbar__nav { display: flex; flex-direction: column; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #faf0e6; -webkit-backdrop-filter: blur(30px) saturate(3); backdrop-filter: blur(30px) saturate(3); z-index: var(--z-index-menu);  padding:  7.8rem 0 0; }
+	.navbar.open .navbar__nav { display: flex; flex-direction: column; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #ffffffdf; -webkit-backdrop-filter: blur(30px) saturate(3); backdrop-filter: blur(30px) saturate(3); z-index: var(--z-index-menu);  padding:  7.8rem 0 0; }
 	.navbar__nav-inner { overflow: auto; padding: 0 var(--padding); }
 	.navbar.open .navbar__menu,
 	.navbar.open .navbar__utils { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
@@ -827,24 +804,10 @@ a.specials-banner__item:focus { background-color: #fff; color: var(--color-quate
 	.navbar__item:nth-last-child(1) { margin-right: 0; }
 }
 </style>
-<link rel="preload" href="header.png" as="image"><style>
+<link rel="preload" href="https://www.the9rio.com/wp-content/uploads/2023/11/index-hero.jpg" as="image"><style>
 .hero { position: relative; overflow: hidden; background-color: #040913; }
-.hero__bg::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 73%, rgba(0,0,0,0.6) 100%);
-    opacity: 0;
-    transition: opacity .5s var(--animation-easing);
-    backdrop-filter: blur(6px);
-    pointer-events: none;
-}
-.hero--loaded .hero__bg::after {
-    opacity: 1;
-}
+.hero__bg::after { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(0deg, rgba(0, 0, 0, .025) 0, rgba(0, 0, 0, .025) 30%, rgba(0, 0, 0, .025) 73%, rgba(0, 0, 0, .4) 100%); opacity: 0; transition: opacity .5s var(--animation-easing); }
+.hero--loaded .hero__bg::after { opacity: 1; }
 .hero__bg-image { display: block; height: var(--device-height); width: 100%; object-fit: cover; opacity: 0; transform: scale(1.05); transition: opacity .5s var(--animation-easing), transform 2s var(--animation-easing); pointer-events: none; }
 
 /* Optional Mobile Background */
@@ -1078,51 +1041,103 @@ a.specials-banner__item:focus { background-color: #fff; color: var(--color-quate
 .btn-review { font-size: 13px; min-width: initial; min-height: initial; padding: .5rem 1.4rem; }
 </style>
 <style>
-.site-footer {
-  background-color: var(--color-primary);
-  color: #fff;
-  padding: 2rem 1rem 1rem;
-  text-align: center;
-  font-family: sans-serif;
+.footer-nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2.4rem; }
+.footer-nav__item { font-family: var(--font-family-tertiary); font-size: 13px; margin-bottom: .5rem; }
+.footer-nav__item::after { content: '|'; }
+.footer-nav__item:last-of-type::after { display: none; }
+.footer-nav__item:last-of-type + .footer-nav__link { margin-right: 0; }
+.footer-nav__link { margin-left: 8px; margin-right: 8px; }
+.footer-nav__link:hover, .footer-nav__link:focus, .footer-nav__link.active { text-decoration: underline; }
+@media(min-width: 992px) {
+	.footer-nav { margin-top: 0; }
+	.footer-nav__item { margin-bottom: 0; }
+}
+@media(min-width: 1440px) {
+	.footer-nav__item { font-size: 14px; }
+}
+</style>
+<style>
+.footer__copyright { font-family: var(--font-family-tertiary); font-size: 9px; text-transform: uppercase; display: grid; justify-content: space-between; align-items: center; grid-template-columns: auto auto; grid-gap: 1rem; }
+.footer__copyright__content { display: flex; justify-content: center; align-items: center; margin-bottom: var(--footer-block-margin); }
+.footer__copyright__jumpem { text-align: center; line-height: 1.2; margin-bottom: var(--footer-block-margin); }
+.footer__copyright__jumpem span { font-family: var(--font-family-tertiary); font-weight: 500; margin-right: 2.5px; }
+.footer__copyright__jumpem a { display: block; font-family: var(--font-family-quaternary); font-weight: 900; color: #29b354; font-size: 135%; text-decoration: none; }
+@media (min-width: 992px) {
+	.footer__copyright__jumpem a { display: inline-block; }
+}
+@media (min-width: 992px) {
+    .footer__copyright { font-size: 12px; padding: 1.2rem 2.45% 1.4rem 4%; }
+}
+@media (min-width: 1440px) {
+	.footer__copyright { padding: 1.2rem 2.45% 1.4rem 6%; }
+}
+</style>
+<style>
+.footer-message { padding: 0.5rem var(--padding); color: #fff; background-color: var(--color-primary); text-align: center; font-family: var(--font-family-secondary); font-size: 14px; margin-bottom: -5px; }
+
+.footer { border-top: 8px solid var(--color-primary); }
+.footer__inner { position: relative; grid-gap: 1px; padding: 0 20px 0; --footer-block-margin: 1.5rem; }
+.footer__inner > * { position: relative; color: #000; background-color: #fff; z-index: 1; }
+.footer__background { display: block; content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #fff; }
+.footer__logo { margin-top: var(--footer-block-margin); margin-bottom: var(--footer-block-margin); }
+.footer__logo img { margin-left: auto; margin-right: auto; max-width: 250px; text-align: center; }
+.footer__info { margin-bottom: var(--footer-block-margin); }
+.footer__info-container { text-align: center; margin-bottom: var(--footer-block-margin); }
+.footer__footer-label, 
+.footer__footer-value  { display: block; font-family: var(--font-family-tertiary); }
+.footer__footer-label { font-size: 15px; color: var(--color-primary); text-transform: uppercase; margin-top: 2rem; }
+.footer__footer-value { font-size: 13px; }
+.footer__hours { max-width: 270px; margin: auto; }
+.footer__navigation { display: flex; justify-content: space-between; align-items: center; flex-direction: column; margin-bottom: var(--footer-block-margin); }
+.footer__corporate { display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: var(--footer-block-margin); }
+.footer__hour { display: flex; justify-content: space-between; }
+.footer__hour .footer__footer-value:first-child { margin-right: 2.6rem; }
+
+.footer__navigation__message,
+.footer__navigation__message > * { font-family: var(--font-family-tertiary); font-size: 11px; font-weight: 500; text-align:center; }
+.footer__navigation__message > * { margin-bottom: 0.5rem; }
+.footer__navigation__message > *:last-child { margin-bottom: 0; }
+
+.footer__info-block--address { display: flex; flex-wrap: wrap; max-width: 400px; margin: auto; column-gap: 1rem; }
+.footer__group { flex: 1 1 calc(50% - 0.5rem); }
+@media (min-width: 992px) {
+	.footer__footer-label { font-size: 16px; }
+	.footer__info-block--address {  display: block; max-width: initial; margin: 0; }
+	.footer__group { flex: 1 1 100%; }
+	.footer__group + .footer__group { margin-top: 1.2rem; }
+}
+@media (min-width: 992px) {
+	.footer__inner { --footer-block-margin: 0; display: grid; grid-template-areas: "footer-logo footer-info" "footer-logo footer-nav" "footer-corporate footer-copyright"; grid-template-rows: auto auto auto auto; grid-template-columns: 1fr 3.3fr; padding-left: 0; padding-right: 0; }
+	.footer__logo { grid-area: footer-logo; padding: 15px; display: flex; justify-content: center; align-items: center; width: 100%; }
+	.footer__logo img { max-width: initial; }
+	.footer__background { display: block; content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #9ba3b2; }
+	.footer__info { grid-area: footer-info; padding: 2.4rem 4% 2.7rem 5%; }
+	.footer__info-block { margin-bottom: 0; }
+	.footer__info-container { display: grid; grid-auto-flow: column; grid-gap: 2.4rem; justify-content: space-between; text-align: initial; max-width: 910px; }
+	.footer__footer-label { margin-top: 0; }
+	.footer__footer-label + .footer__footer-value + .footer__footer-label { margin-top: 1.2rem; }
+
+	/* Make the Address Field Bigger if it's all that's there */
+	.footer__info-block--big-address { display: grid; grid-template-columns: auto auto; row-gap: 1.2rem; column-gap: 3rem; }
+	.footer__info-block--big-address .footer__group + .footer__group { margin-top: 0; }
+
+	.footer__hours { max-width: initial; }
+  	.footer__navigation { grid-area: footer-nav; flex-direction: row; padding: 1.6rem 4% 1.4rem 5%; }
+  	.footer__corporate { grid-area: footer-corporate; padding: 1rem; text-align: center; }
+  	.footer__copyright {grid-area: footer-copyright; }
+}
+@media (min-width: 1200px) {
+  .footer__inner { grid-template-areas: "footer-logo footer-info" "footer-logo footer-nav" "footer-corporate footer-copyright"; grid-template-columns: 1fr 2.23fr; grid-template-rows: auto auto auto; }
+  .footer__footer-value { font-size: 14px; }
+}
+@media (min-width: 1440px) {
+	.footer__info { padding: 2.4rem 2.45% 2.7rem 6%; }
+  	.footer__navigation { padding: 1.6rem 2.45% 1.4rem 6%; }
 }
 
-.footer-content h2 {
-  margin: 0 0 0.5rem;
-  color: var(--color-secondary);
+@media(max-width: 991px) {
+	.footer__info-block--call-text { display: grid; grid-template-rows: auto auto; grid-template-columns: auto; grid-auto-flow: column; max-width: 400px; margin: auto; grid-column-gap: 1rem; }
 }
-
-.footer-content p {
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.footer-links a {
-  color: var(--color-secondary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--color-primary);
-}
-
-.footer-bottom {
-  font-size: 0.8rem;
-  color: #aaa;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  padding-top: 0.5rem;
-}
-
 </style>
 <style>
 /* Mobile Buttons */
@@ -1357,7 +1372,7 @@ a.specials-banner__item:focus { background-color: #fff; color: var(--color-quate
         
     <img 
         class="img-fluid hero__bg-image"
-        src="header.png"
+        src="https://www.the9rio.com/wp-content/uploads/2023/11/index-hero.jpg"
         width="1600" 
         height="900" 
         alt="building exterior"
@@ -1979,10 +1994,247 @@ a.specials-banner__item:focus { background-color: #fff; color: var(--color-quate
 		
 	</div>
 
+<footer class="footer ">
 
 
+	<div class="footer__inner container">
 
-		
+		<div class="footer__background"></div>
+
+		<div class="footer__logo">
+			
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg"
+        width="352" 
+        height="156" 
+        alt="logo"
+        fetchpriority="low"
+    >
+		</div>
+
+		<div class="footer__info">
+			<div class="footer__info-container">
+
+															<div class="footer__info-block">
+							<span class="footer__footer-label">Office Hours</span>
+							<div class="footer__hours" role="presentation">
+								<div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Monday-Friday
+												</div>
+																						<div class="footer__footer-value">
+																									10:00 am - 6:00 pm
+																							</div>
+										</div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Saturday
+												</div>
+																						<div class="footer__footer-value">
+																									10:00 am - 5:00 pm
+																							</div>
+										</div>
+																			<div class="footer__hour">
+																							<div class="footer__footer-value">
+													Sunday
+												</div>
+																						<div class="footer__footer-value">
+																									11:00 am - 4:00 pm
+																							</div>
+										</div>
+																	</div>
+							</div>
+						</div>
+					        
+				<div class="footer__info-block footer__info-block--address ">
+
+											<div class="footer__group">
+							<span class="footer__footer-label">Property Address</span>
+															<a href="https://goo.gl/maps/ztUrgQUpcBX72wNn6" class="footer__footer-value" target="_blank">
+									2100 Rio Grande,
+									Austin,
+									TX
+									78705
+								</a>
+							
+						</div>
+					
+					
+					
+				</div>
+
+									<div class="footer__info-block footer__info-block--call-text">
+													<span class="footer__footer-label">Give Us A Call/Text</span>
+							<span class="footer__footer-value">
+								<a class="footer__footer-link" href="tel:8443843953">
+									(844) 384-3953
+								</a>
+							</span>
+																	</div>
+				
+			</div>
+		</div>
+
+		<div class="footer__navigation">
+
+			<div class="footer__navigation__sns">
+				    <ul class="sns">
+                            <li class="sns__item">
+                <a class="sns__link" href="https://www.facebook.com/ninerio" title="View us on Facebook" target="_blank" rel="nofollow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+            </li>
+                                    <li class="sns__item">
+                <a class="sns__link" href="https://www.instagram.com/nineatrio/" title="View us on Instagram" target="_blank" rel="nofollow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+            </li>
+                                                                                                                                    <li class="sns__item">
+                <a class="btn btn-review btn-primary" href="https://www.the9rio.com/review/" title="Review us on Google" target="_blank" rel="nofollow">
+                    Review Us
+                </a>
+            </li>
+            </ul>
+
+			</div>
+
+			<div class="footer__navigation__nav">
+				<ul class="footer-nav">
+        <li class="footer-nav__item">
+        <a class="footer-nav__link" href="https://www.landmarkproperties.com/careers/" target="_blank" rel="nofollow">
+            Careers
+        </a>
+    </li>
+                <li class="footer-nav__item">
+            <a class="footer-nav__link" href="/accessibility-policy/">
+                Accessibility Policy
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/privacy-policy/" target="_blank" rel="nofollow">
+                Privacy Policy
+            </a>
+        </li>
+                            <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/terms-of-use/" target="_blank" rel="nofollow">
+                Terms of Use
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link termly-display-preferences" href="#" target="_blank" rel="nofollow">
+                Consent Preferences
+            </a>
+        </li>
+                    <li class="footer-nav__item">
+            <a class="footer-nav__link" href="https://www.landmarkproperties.com/privacy-policy/#choices-options" target="_blank" rel="nofollow">
+                About Ads
+            </a>
+        </li>
+                                <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/move-in/" target="_blank" rel="nofollow">
+                    Move In
+                </a>
+            </li>
+                    <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/move-out/" target="_blank" rel="nofollow">
+                    Move Out
+                </a>
+            </li>
+                    <li class="footer-nav__item">
+                <a class="footer-nav__link" href="https://www.the9rio.com/wp-content/uploads/2025/04/Landmark-Venture-Texas-TREC-form-2025.pdf" target="_blank" rel="nofollow">
+                    Real Estate Commission Information About Brokerage Services & Consumer Protection Notice
+                </a>
+            </li>
+            </ul>
+
+				
+			</div>
+
+		</div>
+
+		<div class="footer__corporate">
+			
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/landmark-properties.png"
+        width="164" 
+        height="42" 
+        alt="Landmark Properties"
+        fetchpriority="low"
+    >
+							<div class="footer__navigation__message">
+					<p>Landmark Venture Management, LLC</p>
+
+				</div>
+					</div>
+
+		<div class="footer__copyright">
+    <div class="footer__copyright__content">
+        <span style="margin-right: 5px;">
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/equal-opportunity-housing.png"
+        width="40" 
+        height="42" 
+        alt="Equal Housing Opportunities"
+        fetchpriority="low"
+    >
+</span>
+        Copyright &copy;
+        2025
+        - Equal Housing Opportunities - All Rights Reserved
+    </div>
+    <div class="footer__copyright__jumpem">
+        <span>Powered By </span>
+        <a href="https://www.jumpem.com/" target="_blank" rel="nofollow" title="Jumpem Web Design & Internet Marketing">
+            
+
+
+    <img 
+        class="img-fluid blur lazyload "
+        data-src="https://www.the9rio.com/wp-content/themes/landmark-2023/assets/images/jumpem.svg"
+        width="66" 
+        height="14" 
+        alt="Jumpem Web Design & Internet Marketing"
+        fetchpriority="low"
+    >
+        </a>
+    </div>
+</div>
+
+
+	</div>
+
+</footer>
+
+
+		<div class="mobile-buttons">
+
+                <a href="tel:8443843953" title="Call Us" target="_blank" rel="nofollow noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"/></svg>
+            <span>Call</span>
+        </a>
+        
+        
+        
+                <a 
+        href="https://entrata.the9rio.com/Apartments/module/application_authentication/" 
+                    target="_blank" 
+            rel="nofollow noreferrer"
+                >
+            <span>Apply Now</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+        </a>
+        
+</div>
 
 
 		<script type="module">
@@ -1991,15 +2243,120 @@ function formatDate(date) {
     var parts = date.split('/');
     return new Date(parts[2], parts[1] - 1, parts[0]);
 }
+// Swap the banners
+function swapBanner(banner,allSpecials,delay){
+    // Get Next Special
+    var nextSpecial = banner.nextElementSibling || allSpecials[0];
+    transitionAnimation(nextSpecial, banner, 'specials-banner__item--active',null,delay);
+    return nextSpecial;
+}
 
+// Get Specials
+const specialsNodes = document.querySelectorAll('.specials-banner__item');
+const specials = [];
+// Get Active Special
+let activeSpecial = document.querySelector('.specials-banner__item--active');
 
+// Remove the inactive specials from HTML and NodeList
+specialsNodes.forEach(function(special,idx) {
+    const startDate = special.getAttribute('data-start-date');
+    const endDate = special.getAttribute('data-end-date');
+    if(startDate || endDate) {
+        const now = new Date();
+        const start = startDate ? new Date(formatDate(startDate)) : now;
+        const end = endDate ? new Date(formatDate(endDate)) : now;
+        if(start > now || end < now) {
+            if(activeSpecial === special){
+                activeSpecial = swapBanner(special,specialsNodes,0);
+            }
+            // Remove special
+            special.remove();
+            return;
+        }
+    }
+    specials.push(special);
+    return;
+});
 
+// If there is an active special and more than one special
+if(activeSpecial && specials.length > 1) {
+    // Set interval to transition specials
+    const interval = setInterval(function() {
+        // If the body has no-scroll class, skip this interval
+        const noScroll = document.body.classList.contains('no-scroll');
+        if(noScroll) {
+            return;
+        }
+        activeSpecial = swapBanner(activeSpecial,specials);
+    }, 5000);
+}
 
 /**
  * Countdowns
  * */
 
-
+// Get All Countdowns
+const countdowns = document.querySelectorAll('.countdown')
+// If No Countdowns, Return
+if(countdowns.length) {
+    // For Each Countdown
+    countdowns.forEach(countdown => {
+        // Get Countdown Date from data-date and data-time Attributes
+        const countdownDate = new Date(countdown.dataset.date + ' ' + countdown.dataset.time).getTime()
+        // If Countdown Date is Invalid or Date is in the Past, Return
+        if(isNaN(countdownDate) | countdownDate < new Date().getTime()) return
+        // Get Format
+        const format = countdown.dataset.format
+        // Get format variables from string format
+        const formatVariables = format.split(',').map(variable => variable.trim());
+        // Update Countdown Every Second
+        setInterval(() => {
+            // Get Current Date
+            const now = new Date().getTime()
+            // Get Time Remaining (Date - Now)
+            const distance = countdownDate - now
+            // Calculate Months, Days, Hours, Minutes, Seconds
+            const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.437))
+            const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.437)) / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+            // Update Countdown HTML
+            countdown.innerHTML = `
+                ${formatVariables.includes('months') && months > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${months}</span>
+                        <span class="countdown-label">${months > 1 ? 'Months' : 'Month'}</span>${formatVariables.includes('days') && days > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('days') && days > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${days}</span>
+                        <span class="countdown-label">${days > 1 ? 'Days' : 'Day'}</span>${formatVariables.includes('hours') && hours > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('hours') && hours > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${hours}</span>
+                        <span class="countdown-label">${hours > 1 ? 'Hours' : 'Hour'}</span>${formatVariables.includes('minutes') && minutes > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('minutes') && minutes > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${minutes}</span>
+                        <span class="countdown-label">${minutes > 1 ? 'Minutes' : 'Minute'}</span>${formatVariables.includes('seconds') && seconds > 0 ? `,` : ``}
+                    </span>
+                ` : ``}
+                ${formatVariables.includes('seconds') && seconds > 0 ? `
+                    <span class="countdown-item">
+                        <span class="countdown-value">${seconds}</span>
+                        <span class="countdown-label">${seconds > 1 ? 'Seconds' : 'Second'}</span>
+                    </span>
+                ` : ``}
+            `
+        }, 1000)
+    });
+}
 </script>
 
 <script>
@@ -2364,7 +2721,39 @@ var resized = false;
 function initMap() {
 if(window.GMaps) return;
 
+// Load the google maps script
+var script = document.createElement('script');
+script.src = 'https://www.the9rio.com/wp-content/themes/landmark-2023/assets/js/google-maps.js';
+script.async = true;
+script.onload = function(){
 
+    var localData = {"mapMarkers":{"all":[{"title":"The Nine at Rio","place_id":"ChIJ4XI-mLG1RIYRAQMdAplCMcU","icon":{"width":120,"height":53.18181818181817988033799338154494762420654296875,"image":"https:\/\/www.the9rio.com\/wp-content\/uploads\/2023\/11\/logo2.svg"}},{"title":"The University of Texas at Austin","place_id":"ChIJt8-EJZu1RIYR3iFKF0_uMYE"},{"title":"UT Tower","place_id":"ChIJk39b73m1RIYR8Tsvix5ODtM"},{"title":"Pease District Park","place_id":"ChIJva0k12-1RIYRWWvusUoiw_4"}]},"customStyles":[{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"color":"#cee9de"},{"saturation":"2"},{"weight":"0.80"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"weight":"1"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#f5d6d6"},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway.controlled_access","elementType":"labels.icon","stylers":[{"visibility":"off"},{"hue":"#0064ff"},{"gamma":"1.44"},{"lightness":"-3"},{"weight":"1.69"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"simplified"},{"weight":"0.31"},{"gamma":"1.43"},{"lightness":"-5"},{"saturation":"-22"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"hue":"#ff0000"}]},{"featureType":"transit.station.airport","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#ff0045"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#00d1ff"}]},{"featureType":"transit.station.bus","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.station.rail","elementType":"all","stylers":[{"visibility":"off"},{"hue":"#00cbff"}]},{"featureType":"transit.station.rail","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"weight":"1.61"},{"color":"#cde2e5"},{"visibility":"on"}]}],"activeColor":"#b6674a","fillColor":"#007b99"};
+
+    var mapLinks = document.querySelectorAll('.location-group');
+
+    var googleMap = new JumpemGoogleMap({
+        el: document.querySelector('.home-section-7__gmap'),
+        custom_style: localData.customStyles,
+        markers: localData.mapMarkers,
+        fillColor: localData.fillColor,
+        activeColor: localData.activeColor,
+        key: "AIzaSyB59r8Sl8FRki86UyuedU8gH_gZSivLAGc",
+        activeEl: '.location-group'
+    });
+
+    mapLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var label = link.dataset.placeId;
+            googleMap.setActiveMarker(label);
+            mapLinks.forEach(function(link) {
+                link.classList.remove('location-group--active');
+            });
+            link.classList.add('location-group--active');
+        });
+    });
+
+}
 document.body.appendChild(script);
 }
 Promise.all([gsapLoaded]).then(function() {
@@ -2406,31 +2795,85 @@ Promise.all([gsapLoaded]).then(function() {
     }
 
 });
+</script>
 
 
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/landmark-2023\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?ver=6.8.2" defer id="gsap" onload="document.dispatchEvent(new Event('gsap-loaded'));"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?ver=6.8.2" defer id="gsap-scrollTrigger" onload="document.dispatchEvent(new Event('gsap-scrollTrigger-loaded'));"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js?ver=6.8.2" defer id="swiper-js" onload="document.dispatchEvent(new Event('swiper-js-loaded'));"></script>
 
+				<script>
 
+var _userway_config = {
+    account: 'vZsX8kyRFY'
+};
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; 
+        s.async = true;
+        s.src = 'https://cdn.userway.org/widget.js';
+        document.head.appendChild(s);
+    }, 5000);
+});
 
 </script>	
 		
 
-				
+				<script type="module">
+    import MEChat from 'https://cdn.skypack.dev/@meetelise/chat';
+    MEChat.start({
+      organization: "d073d964-1b0c-45d7-a6f1-ad1a8317048e"
+    });
+</script>
 	
-		
-<footer class="site-footer">
-  <div class="footer-content">
-    <h2>Adithya Hebbalae</h2>
-    <p>Building, learning, and exploring — one project at a time.</p>
-    <ul class="footer-links">
-      <li><a href="mailto:youremail@example.com">Email</a></li>
-      <li><a href="https://github.com/adihebbalae" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-    </ul>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Adi Hebbalae. All rights reserved.</p>
-  </div>
-</footer>
+		<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+        "@type": ["ApartmentComplex"],
+        "logo": "https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg",
+    "image": [
+        "https://www.the9rio.com/wp-content/uploads/2023/11/logo2.svg"
+    ],
+    "name": "The Nine at Rio",
+    "description": "",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2100 Rio Grande",
+        "addressLocality": "Austin",
+        "addressRegion": "TX",
+        "postalCode": "78705",
+        "addressCountry": "US"
+    },    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.2842794",
+        "longitude": "-97.7475376"
+    },
+    "url": "https://www.the9rio.com",
+    "telephone": "(844) 384-3953",
+    "openingHoursSpecification": [            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "10:00",
+                "closes": "18:00"
+            }
+            ,            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+            ,            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday"],
+                "opens": "11:00",
+                "closes": "16:00"
+            }
+            ]
+}
+</script>
 
 </body>
 
