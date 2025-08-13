@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Poker Bankroll Tracker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.1.1/core.css">
+    <script defer src="https://pyscript.net/releases/2025.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: center;
+        }
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+<h1>Poker Bankroll Tracker</h1>
+
+<div>
+    <label>Base Buy-in Amount ($):</label>
+    <input id="buyin" type="number" step="0.01" value="5">
+    <label>Chips per Buy-in:</label>
+    <input id="chipsPerBuyin" type="number" value="1000">
+    <label>Number of Players:</label>
+    <input id="numPlayers" type="number" value="3">
+    <button id="setupBtn">Setup Players</button>
+</div>
+
+<div id="playersForm"></div>
+<button id="calcBtn" style="display:none;">Calculate Results</button>
+
+<div id="results"></div>
+
+<py-script>
+from decimal import Decimal
+
+def calculate_results(base_buyin, chips_per_buyin, players):
+    chip_value = Decimal(base_buyin) / Decimal(chips_per_buyin)
+    results = []
+    total_net = Decimal(0)
+    for p in players:
+        chips_in = int(Decimal(p["total_buyin"]) * Decimal(chips_per_buyin) / Decimal(base_buyin))
+        net_chips = Decimal(p["final_chips"]) - chips_in
+        net_dollars = net_chips * chip_value
+        total_net += net_dollars
+        results.append({
+            "name": p["name"],
+            "buyin": Decimal(p["total_buyin"]),
+            "chips_in": int(chips_in),
+            "final_chips": p["final_chips"],
+            "net_chips": int(net_chips),
+            "net_dollars": round(net_dollars, 2)
+        })
+    return results, round(total_net, 2)
+
+def render_table(results, total_net):
+    table_html = "<table><tr><th>Name</th><th>Bought $</th><th>Chips In</th><th>Final Chips</th><th>Net Chips</th><th>Net $</th></tr>"
+    for r in results:
+        table_html += f"<tr><td>{r['name']}</td><td>${r['buyin']:.2f}</td><td>{r['chips_in']}</td><td>{r['final_chips']}</td><td>{r['net_chips']}</td><td>${r['net_dollars']:.2f}</td></tr>"
+    table_html += f"<tr><th colspan='5'>TOTAL</th><th>${total_net:.2f}</th></tr></table>"
+    if abs(total_net) < Decimal("0.01"):
+        table_html += "<p style='color:green;'>✅ All balances match.</p>"
+    else:
+        table_html += "<p style='color:red;'>❌ Balances do not match.</p>"
+    return table_html
+
+from js import document
+
+def setup_players(event):
+    num_players = int(document.getElementById("numPlayers").value)
+    players_form_html = ""
+    for i in range(num_players):
+        players_form_html += f"<h3>Player {i+1}</h3>"
+        players_form_html += f"Name: <input id='name{i}'><br>"
+        players_form_html += f"Total $ bought in: <input id='buy{i}' type='number' step='0.01'><br>"
+        players_form_html += f"Final chips: <input id='chips{i}' type='number'><br>"
+    document.getElementById("playersForm").innerHTML = players_form_html
+    document.getElementById("calcBtn").style.display = "block"
+
+def calc_results(event):
+    base_buyin = Decimal(document.getElementById("buyin").value)
+    chips_per_buyin = int(document.getElementById("chipsPerBuyin").value)
+    num_players = int(document.getElementById("numPlayers").value)
+
+    players = []
+    for i in range(num_players):
+        players.append({
+            "name": document.getElementById(f"name{i}").value,
+            "total_buyin": Decimal(document.getElementById(f"buy{i}").value or "0"),
+            "final_chips": int(document.getElementById(f"chips{i}").value) if document.getElementById(f"chips{i}").value.isdigit() else 0
+        })
+
+    results, total_net = calculate_results(base_buyin, chips_per_buyin, players)
+    document.getElementById("results").innerHTML = render_table(results, total_net)
+
+document.getElementById("setupBtn").addEventListener("click", setup_players)
+document.getElementById("calcBtn").addEventListener("click", calc_results)
+</py-script>
+
+</body>
+</html>

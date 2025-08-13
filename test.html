@@ -35,6 +35,97 @@
 	
 				
 		<style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) translateY(0);
+            }
+        }
+
+        @keyframes fadeInDelayed {
+            0%, 40% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            pointer-events: none;
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        .title-container {
+            position: relative;
+            display: inline-block;
+            padding: 20px 40px;
+            background: var(--color-primary);
+            transform: rotate(-2deg);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .title-shadow {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: rgba(255, 0, 0, 0.4);
+            z-index: -1;
+            transform: rotate(2deg);
+        }
+
+        .main-title {
+            font-size: 5rem;
+            font-weight: 700;
+            color: white;
+            margin: 0;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .subtext {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+            margin-top: 2rem; /* Adjust value as needed */
+            text-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.4);
+            opacity: 0;
+            animation: fadeInDelayed 3s ease-in-out forwards;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 3rem;
+            }
+            .subtext {
+                font-size: 1.2rem;
+            }
+            /* Adjusted padding for .title-container on smaller screens to maintain visual balance and readability */
+            .title-container {
+                padding: 1rem 2rem;
+            }
+        }
+
+
+
 				*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all:unset;
     display:revert;
@@ -361,13 +452,6 @@ hr {
     .gm-style-iw.gm-style-iw-c { max-width: 340px!important; }
 }
 
-/* Termly */
-#termly-code-snippet-support button {
-    text-align: center;
-}
-#termly-code-snippet-support .t-consentPrompt {
-    z-index: 10000000000;
-}
 
 html body .uwy {z-index: 20000;}
 
@@ -823,7 +907,7 @@ window.onload = function() {
 .hero__video { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; opacity: 0; transition: clip-path 1.5s var(--animation-easing) 1s, opacity .5s var(--animation-easing); clip-path: polygon(0 0, 0 0, 0 0, 0 50%); }
 .hero--video-playing .hero__video{ opacity: 1; clip-path: polygon(-50% 0%, 200% 0, 0 200%, 0 -50%); }
 .hero__video iframe { position: absolute; top: 50%; left: 50%; width: var(--video-width); height: var(--video-height); transform: translate(-50%, -50%); }
-.hero__scroll-hint { display: flex; justify-content: center; align-items: center; position: absolute; bottom: 0; left: 50%; width: 10rem; height: 10rem; transform: translate(-50%, -88px); z-index: var(--z-index-base); transition: opacity .666666s ease .5s; cursor: pointer; }
+.hero__scroll-hint { display: flex; justify-content: center; align-items: center; position: absolute; bottom: 0; left: 50%; width: 10rem; height: 10rem; transform: translate(-50%, -88px); z-index: var(--z-index-base); transition: opacity .666666s ease .5s; cursor: pointer;}
 @media(min-width: 992px) {
     .hero { background-color: #faf0e6; }
     .hero__video { display: block; }
@@ -1105,11 +1189,9 @@ window.onload = function() {
 </nav>
 
 	
-							<header class="hero">
+							
+<header class="hero">
 	<div class="hero__bg">
-
-                                
-
 
         
     <img 
@@ -1121,11 +1203,94 @@ window.onload = function() {
         fetchpriority="high"
     >
         
-
 	</div>
 </header>
 
-<div class="hero__content" style="
+<div class="hero__content">
+        <div class="title-container">
+            <span class="title-shadow"></span>
+            <h1 class="main-title">Hi, I'm Adi</h1>
+        </div>
+        <p class="subtext">Welcome to my digital space</p>
+    </div>
+
+<!-- Scroll Hint Button -->
+<!-- Scroll Hint Button (centered + fade-in, no GSAP) -->
+<div class="hero__scroll-hint" id="scrollHint">
+  <div class="hero__scroll-hint__inner">
+    <a href="#"
+       class="btn btn-primary-alt"
+       data-scroll-to-element="#home-section-1">
+       About Me
+    </a>
+  </div>
+</div>
+
+<style>
+  /* Animate the INNER element so we don't clobber the centering transform
+     on .hero__scroll-hint (which positions it with translate(-50%, ...)) */
+  .hero__scroll-hint__inner {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 3s ease 2.5s, transform 1s ease 2s;
+  }
+  .hero__scroll-hint.is-visible .hero__scroll-hint__inner {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Optional: tidy button sizing inside the circular area */
+  .hero__scroll-hint .btn {
+    min-width: auto;         /* avoid weird stretching */
+    min-height: auto;
+    padding: .6rem 1.1rem;   /* tweak as you like */
+    text-align: center;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__scroll-hint__inner { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+
+<script>
+  // Reveal the button when the hint enters the viewport
+  document.addEventListener('DOMContentLoaded', function () {
+    const hint = document.querySelector('.hero__scroll-hint');
+    if (!hint) return;
+
+    const io = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        hint.classList.add('is-visible');
+        io.disconnect();
+      }
+    }, { threshold: 0.1 });
+
+    io.observe(hint);
+  });
+</script>
+
+
+
+<!-- Random Text Loaded --> <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sentences = [
+            "Welcome to my digital space",
+            "Exploring the intersection of math and engineering",
+            "Turning ideas into reality through code",
+            "Building technology with purpose",
+            "Engineering meets creativity here"
+        ];
+
+        // Pick a random sentence
+        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+
+        // Set it in the subtext element
+        document.querySelector(".subtext").textContent = randomSentence;
+    });
+</script>
+
+
+<!-- <div class="hero__content" style="
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1167,7 +1332,7 @@ window.onload = function() {
        
     </div>
 </div>
-
+-->
 
 
 <style>
@@ -1425,6 +1590,17 @@ if (hero) {
 </script>
 
 
+
+<!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- GSAP ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  // Register the plugin
+  gsap.registerPlugin(ScrollTrigger);
+  // Fire the custom event so the gsapLoaded promise resolves
+  document.dispatchEvent(new Event('gsap-scrollTrigger-loaded'));
+</script>
 
 <script>
 var gsapLoaded = new Promise(function(resolve) {
