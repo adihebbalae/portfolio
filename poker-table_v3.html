@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poker Bankroll Tracker</title>
+
+  <!-- Link to your site's CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="section section-container">
+  <h1 class="h2">Poker Bankroll Tracker</h1>
+
+  <label>Base Buy-in Amount ($):
+    <input type="number" id="buyin" step="0.01" value="5">
+  </label><br>
+
+  <label>Chips per Buy-in:
+    <input type="number" id="chipsPerBuyin" value="1000">
+  </label><br>
+
+  <label>Number of Players:
+    <input type="number" id="numPlayers" value="3">
+  </label><br>
+
+  <button class="btn btn-primary" onclick="generatePlayerInputs()">Set Players</button>
+
+  <div id="playerInputs" class="section"></div>
+  <button id="calcButton" class="btn btn-primary" style="display:none" onclick="calculate()">Calculate Results</button>
+
+  <div id="results" class="section"></div>
+</main>
+
+<script>
+function generatePlayerInputs() {
+  const numPlayers = parseInt(document.getElementById('numPlayers').value);
+  const container = document.getElementById('playerInputs');
+  container.innerHTML = '';
+  for (let i = 0; i < numPlayers; i++) {
+    container.innerHTML += `
+      <h3 class="h4">Player ${i+1}</h3>
+      <label>Name: <input type="text" id="name${i}"></label><br>
+      <label>Total $ Bought-in: <input type="number" id="bought${i}" step="0.01"></label><br>
+      <label>Final Chips: <input type="number" id="final${i}"></label><br>
+      <hr>
+    `;
+  }
+  document.getElementById('calcButton').style.display = 'inline-block';
+}
+
+function calculate() {
+  const buyin = parseFloat(document.getElementById('buyin').value);
+  const chipsPerBuyin = parseInt(document.getElementById('chipsPerBuyin').value);
+  const chipValue = buyin / chipsPerBuyin;
+  const numPlayers = parseInt(document.getElementById('numPlayers').value);
+
+  let rows = '';
+  let totalBought = 0, totalChipsIn = 0, totalFinalChips = 0, totalNetDollars = 0;
+
+  for (let i = 0; i < numPlayers; i++) {
+    const name = document.getElementById(`name${i}`).value || `Player${i+1}`;
+    const bought = parseFloat(document.getElementById(`bought${i}`).value) || 0;
+    const finalChips = parseInt(document.getElementById(`final${i}`).value) || 0;
+
+    const chipsIn = (bought / buyin) * chipsPerBuyin;
+    const netChips = finalChips - chipsIn;
+    const netDollars = netChips * chipValue;
+
+    totalBought += bought;
+    totalChipsIn += chipsIn;
+    totalFinalChips += finalChips;
+    totalNetDollars += netDollars;
+
+    rows += `
+      <tr>
+        <td>${name}</td>
+        <td>$${bought.toFixed(2)}</td>
+        <td>${chipsIn.toFixed(0)}</td>
+        <td>${finalChips}</td>
+        <td>${netChips.toFixed(0)}</td>
+        <td>${netDollars >= 0 ? '+' : ''}$${netDollars.toFixed(2)}</td>
+      </tr>
+    `;
+  }
+
+  let balanceClass = Math.abs(totalNetDollars) < 0.01 ? 'success' : 'error';
+  let balanceText = Math.abs(totalNetDollars) < 0.01
+    ? 'Balance check: TOTAL NET $ CHANGE sums to zero ✅'
+    : 'Balance check: TOTAL NET $ CHANGE does NOT sum to zero ❌';
+
+  document.getElementById('results').innerHTML = `
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Bought $</th>
+        <th>Chips In</th>
+        <th>Final Chips</th>
+        <th>Net Chips</th>
+        <th>Net $</th>
+      </tr>
+      ${rows}
+      <tr>
+        <th>TOTAL</th>
+        <th>$${totalBought.toFixed(2)}</th>
+        <th>${totalChipsIn.toFixed(0)}</th>
+        <th>${totalFinalChips}</th>
+        <th>${(totalFinalChips - totalChipsIn).toFixed(0)}</th>
+        <th>$${totalNetDollars.toFixed(2)}</th>
+      </tr>
+    </table>
+    <p class="${balanceClass}">${balanceText}</p>
+  `;
+}
+</script>
+
+</body>
+</html>
